@@ -1,4 +1,4 @@
-"""Optional Playwright checks over real loopback HTTP and offline HTML.
+"""Optional Playwright checks over local HTTP or a deployed HTTPS site, plus offline HTML.
 
 Install Playwright separately; --chromium accepts an existing browser.
 Counts and route expectations follow the canonical catalog.
@@ -12,7 +12,7 @@ from pathlib import Path
 import threading
 
 from playwright.sync_api import sync_playwright
-from catalog import ROOT, load
+from catalog import ROOT, load, safe_url
 from standalone import render
 
 
@@ -24,8 +24,11 @@ class QuietHandler(SimpleHTTPRequestHandler):
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--chromium', help='Installed Chromium executable; defaults to Playwright Chromium')
+    parser.add_argument('--url', help='Test a deployed HTTPS site instead of starting local HTTP')
     parser.add_argument('--output', type=Path, default=ROOT/'review'/'browser')
     args = parser.parse_args()
+    if args.url and not safe_url(args.url):
+        parser.error('--url must be an HTTPS URL without embedded credentials')
     args.output.mkdir(parents=True, exist_ok=True)
     papers, _, _, routes = load()
     total = len(papers)
@@ -38,12 +41,17 @@ def main() -> None:
     def observe(page):
         page.on('pageerror', lambda e: errors.append(str(e)))
         page.on('requestfailed', lambda r: failed_requests.append(r.url))
+        page.on('response', lambda r: failed_requests.append(f'{r.status} {r.url}') if r.status >= 400 else None)
         page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
 
-    server = ThreadingHTTPServer(('127.0.0.1', 0), partial(QuietHandler, directory=str(ROOT/'docs')))
-    thread = threading.Thread(target=server.serve_forever, daemon=True)
-    thread.start()
-    origin = f'http://127.0.0.1:{server.server_port}/'
+    server = thread = None
+    if args.url:
+        origin = args.url
+    else:
+        server = ThreadingHTTPServer(('127.0.0.1', 0), partial(QuietHandler, directory=str(ROOT/'docs')))
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        origin = f'http://127.0.0.1:{server.server_port}/'
     try:
         with sync_playwright() as pw:
             browser = pw.chromium.launch(executable_path=args.chromium, headless=True)
@@ -51,10 +59,11 @@ def main() -> None:
                                       accept_downloads=True, reduced_motion='no-preference')
             page = ctx.new_page()
             observe(page)
-            page.goto(origin, wait_until='networkidle')
+            response = page.goto(origin, wait_until='networkidle')
+            assert response and response.ok, f'Page load failed: {origin}'
             assert page.locator('#stat-count').inner_text() == str(total)
             assert page.locator('.paper-card').count() == min(12, total)
-            record('HTTP desktop render with catalog-derived counts')
+            record('HTTP(S) desktop render with catalog-derived counts')
             assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
             record('Desktop: no horizontal overflow')
             page.screenshot(path=str(args.output/'desktop.png'))
@@ -203,7 +212,7 @@ def main() -> None:
             assert mp.evaluate('document.documentElement.scrollWidth <= innerWidth')
             mp.screenshot(path=str(args.output/'mobile.png'), full_page=True)
             mp.screenshot(path=str(args.output/'mobile-viewport.png'))
-            mp.locator('#collection').scroll_into_view_if_needed()
+            mp.locator('#search').evaluate("(e)=>e.scrollIntoView({block:'start',behavior:'instant'})")
             mp.screenshot(path=str(args.output/'mobile-filters.png'))
             mp.locator('#search').fill('TorNet')
             assert mp.locator('.paper-card').count() >= 1
@@ -244,11 +253,13 @@ def main() -> None:
             record('No JavaScript console errors or failed asset requests')
             browser.close()
     finally:
-        server.shutdown()
-        server.server_close()
-        thread.join(timeout=2)
+        if server:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=2)
     (args.output/'results.json').write_text(json.dumps({
-        'mode':'loopback HTTP plus standalone HTML', 'checks':checks, 'count':len(checks),
+        'mode':'remote HTTPS plus standalone HTML' if args.url else 'loopback HTTP plus standalone HTML',
+        'origin':origin, 'checks':checks, 'count':len(checks),
         'catalog_records':total, 'errors':errors, 'failed_requests':failed_requests
     }, indent=2)+'\n', encoding='utf-8')
 

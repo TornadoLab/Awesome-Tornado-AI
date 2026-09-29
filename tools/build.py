@@ -82,7 +82,7 @@ def outputs(root: Path = ROOT) -> dict[str,str]:
         route_lines.append(f"### {r['level']} · {r['name']} / {r['name_zh']}\n\n{r['description']} {r['description_zh']}\n\n"+'\n'.join(f"{i+1}. [{byid[k]['year']} — {byid[k]['title']}](../papers/{byid[k]['category']}.md#{k})" for i,k in enumerate(r['papers'])))
     out['guides/READING_ROUTES.md']='# Three routes into the storm\n\nRoutes are editorial suggestions, not quality rankings. Read primary papers and inspect data availability before implementing.\n\n'+'\n\n'.join(route_lines)+'\n\n**Do not skip the timestamp audit.** A convincing model can still learn from observations unavailable at its claimed forecast issue time.\n'
     replacements={'COUNT':str(len(papers)),'CATEGORY_COUNT':str(len(categories)),'DATE':config['snapshot_date'],'START_YEAR':str(min(p['year'] for p in papers)),'END_YEAR':str(max(p['year'] for p in papers)),'DIRECT_COUNT':str(scopes['direct']),'CONTEXT_COUNT':str(scopes['context']),'TRANSFER_COUNT':str(scopes['transfer']),'CATEGORY_TABLE_EN':table_en,'CATEGORY_TABLE_ZH':table_zh}
-    replacements.update({'ANNOTATED_COUNT':str(detail['annotated']),'BIBLIOGRAPHIC_COUNT':str(detail['bibliographic']),'CODE_COUNT':str(sum(bool(p['code_url']) for p in papers)),'ADDED_COUNT':str(len(papers)-67)})
+    replacements.update({'ANNOTATED_COUNT':str(detail['annotated']),'BIBLIOGRAPHIC_COUNT':str(detail['bibliographic']),'CODE_COUNT':str(sum(bool(p['code_url']) for p in papers)),'ADDED_COUNT':str(len(papers)-67),'WEBSITE_URL':config['website_url']})
     for name in ['README.md','README.zh-CN.md']:
         text=(root/'templates'/name).read_text(encoding='utf-8')
         for key,value in replacements.items():text=text.replace('{{'+key+'}}',value)

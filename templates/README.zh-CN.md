@@ -2,7 +2,7 @@
 
 <h1 align="center">🌪 Awesome Tornado AI</h1>
 <p align="center"><strong>一张持续生长的龙卷研究地图：理解、识别、检测、分级、预测与推理。</strong><br>物理机制 → 雷达证据 → 传统统计 → 深度学习 → 多模态智能体</p>
-<p align="center"><a href="README.md">English</a> · <a href="papers/README.md">论文地图</a> · <a href="guides/READING_ROUTES.md">阅读路线</a> · <a href="RESOURCES.md">数据与工具</a> · <a href="SETUP.zh-CN.md">部署说明</a></p>
+<p align="center"><a href="{{WEBSITE_URL}}">在线网站</a> · <a href="README.md">English</a> · <a href="papers/README.md">论文地图</a> · <a href="guides/READING_ROUTES.md">阅读路线</a> · <a href="RESOURCES.md">数据与工具</a> · <a href="SETUP.zh-CN.md">部署说明</a></p>
 
 > **已收录 {{COUNT}} 条文献 · {{CATEGORY_COUNT}} 个研究方向 · {{START_YEAR}}—{{END_YEAR}} · 检索快照 {{DATE}}**
 >
@@ -12,7 +12,7 @@
 
 **阅读论文：** [完整目录](papers/ALL_PAPERS.md) · [论文与 GitHub／代码索引](papers/CODE_INDEX.md) · [分主题浏览](papers/README.md) · [BibTeX](papers/references.bib) · [CSV](papers/catalog.csv)。
 
-**探索网页：** 本地打开 `docs/index.html`，或运行：
+**探索网页：** [在线访问研究地图]({{WEBSITE_URL}})。也可本地打开 `docs/index.html`，或运行：
 
 ```bash
 python -m http.server 8000 --directory docs
@@ -21,7 +21,7 @@ python -m http.server 8000 --directory docs
 
 网页带有中英文关键词搜索、研究方向/年份/研究范围/发表状态/代码筛选、随机追论文、三条阅读路线、浏览器本地阅读清单及筛选结果 BibTeX 导出。不需要 npm、服务器数据库或 API key。配色与矢量图围绕雷达、涡旋和科研观测站设计；图案是装饰性原创图，不冒充实测雷达图。
 
-当前是**可部署的静态网站文件**，不代表网站已经上线。启用 GitHub Pages 和安全导入步骤见 [SETUP.zh-CN.md](SETUP.zh-CN.md)。
+网站已通过 **GitHub Pages 上线**，启用 HTTPS，并从 `main` 分支的 `docs/` 目录发布。更新和本地预览步骤见 [SETUP.zh-CN.md](SETUP.zh-CN.md)。
 
 龙卷图加入了旋转流线、漏斗摆动和尘粒动画，支持暂停、系统“减少动态效果”设置及离屏暂停。README 的 SVG 横幅也包含动画；不支持 SVG 动画的阅读器仍能显示静态图。
 

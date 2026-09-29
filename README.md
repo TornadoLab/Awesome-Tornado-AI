@@ -2,7 +2,7 @@
 
 <h1 align="center">🌪 Awesome Tornado AI</h1>
 <p align="center"><strong>A living research atlas for understanding, detecting, rating and anticipating tornadoes.</strong><br>Physics → Radar → Statistics → Deep Learning → Multimodal Reasoning</p>
-<p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="papers/README.md">Paper atlas</a> · <a href="guides/READING_ROUTES.md">Reading routes</a> · <a href="RESOURCES.md">Data & tools</a> · <a href="CONTRIBUTING.md">Contribute</a></p>
+<p align="center"><a href="https://tornadolab.github.io/Awesome-Tornado-AI/">Live website</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="papers/README.md">Paper atlas</a> · <a href="guides/READING_ROUTES.md">Reading routes</a> · <a href="RESOURCES.md">Data & tools</a> · <a href="CONTRIBUTING.md">Contribute</a></p>
 
 > **930 source-linked records · 15 directions · 1872–2026 · checked 2026-09-29**
 >
@@ -12,14 +12,14 @@
 
 **Browse the scholarship:** [Full catalog](papers/ALL_PAPERS.md) · [Paper + GitHub/code index](papers/CODE_INDEX.md) · [BibTeX](papers/references.bib) · [CSV](papers/catalog.csv).
 
-**Explore the interactive atlas:** open `docs/index.html` locally, or serve it with the command below. It includes search in English and Chinese, year/task-family/scope/publication/annotation filters, direct paper and code links, random paper discovery, three reading routes, a local reading list and filtered BibTeX export. It has no frontend dependencies, analytics, external fonts or live data calls.
+**Explore the interactive atlas:** [open the website](https://tornadolab.github.io/Awesome-Tornado-AI/), open `docs/index.html` locally, or serve it with the command below. It includes search in English and Chinese, year/task-family/scope/publication/annotation filters, direct paper and code links, random paper discovery, three reading routes, a local reading list and filtered BibTeX export. It has no frontend dependencies, analytics, external fonts or live data calls.
 
 ```bash
 python -m http.server 8000 --directory docs
 # Open http://localhost:8000
 ```
 
-The static site is **ready to deploy**, not asserted to be publicly deployed. See [setup and publishing](SETUP.zh-CN.md). The decorative vortex is original vector artwork, not a measured radar field.
+The site is published on **GitHub Pages**, with HTTPS enforced, from the `main` branch's `docs/` directory. See [setup and publishing](SETUP.zh-CN.md). The decorative vortex is original vector artwork, not a measured radar field.
 
 The vortex now rotates, sways and carries drifting particles. The site has a pause control, honors reduced-motion preferences, and pauses artwork when offscreen. The SVG banner also contains animation; hosts that suppress SVG motion show its static fallback.
 

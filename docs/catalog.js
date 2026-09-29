@@ -7,7 +7,8 @@ window.TORNADO_CATALOG = {
     "snapshot_date": "2026-09-29",
     "edition": "0.2.0",
     "tagline": "From the first echo to the next frontier.",
-    "scope_note": "A broad, growing tornado research atlas. Source metadata checked; not an exhaustive review or an independent reproduction."
+    "scope_note": "A broad, growing tornado research atlas. Source metadata checked; not an exhaustive review or an independent reproduction.",
+    "website_url": "https://tornadolab.github.io/Awesome-Tornado-AI/"
   },
   "categories": [
     {

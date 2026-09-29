@@ -1,5 +1,9 @@
 # Changelog
 
+## GitHub Pages publication — 2026-09-29
+
+Made the source repository public with the owner's authorization and published `main/docs` at `https://tornadolab.github.io/Awesome-Tornado-AI/`, with HTTPS enforced. Added live-site links to both READMEs and a deployed-URL mode to the browser smoke script. Verified 31 browser checks against the public site, including animation, mobile layouts, search, reading-list persistence and bibliography export.
+
 ## 0.2.0 — 2026-09-29
 
 Expanded the original 67-record collection to 930 records across 15 directions and 1872–2026: 163 annotated entries and 767 bibliography-only entries. Added classical radar, dynamics, rating and prediction work alongside engineering, climatology, warnings/social impacts, Chinese research and recent AI. Every entry carries a source link; 20 entries link verified code releases, collected in a separate paper/code index.

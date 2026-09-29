@@ -2,9 +2,9 @@
 
 ## 仓库与网页
 
-仓库地址为 [TornadoLab/Awesome-Tornado-AI](https://github.com/TornadoLab/Awesome-Tornado-AI)。维护源在 `data/` 和 `templates/`，生成后的静态网页在 `docs/`。获取私有仓库需要相应的 GitHub 权限；仓库推送和 GitHub Pages 发布是两个独立步骤。
+公开仓库为 [TornadoLab/Awesome-Tornado-AI](https://github.com/TornadoLab/Awesome-Tornado-AI)，网站为 [Awesome Tornado AI](https://tornadolab.github.io/Awesome-Tornado-AI/)。维护源在 `data/` 和 `templates/`，生成后的静态网页在 `docs/`。
 
-本轮已核实 derong 对应的 GitHub SSH 身份为 `DerongDeng-dero`。Pages 未启用；可先使用下面的本地预览。只有需要把这份模板导入另一个已有仓库时，才使用 B、C 节。
+网站由 `main/docs` 自动发布，已启用 HTTPS。derong 对应的 GitHub 身份为 `DerongDeng-dero`。日常更新使用 E 节；只有需要把模板导入另一个已有仓库时，才使用 B、C 节。
 
 ## A. 先看成品
 
@@ -68,17 +68,17 @@ git push -u origin curation/tornado-observatory
 
 上面的多行命令使用 POSIX shell 换行写法。PowerShell 用户可把 `git add` 写成一行；不要照搬反斜杠换行。推送后再创建 PR，审阅并合并到你实际使用的默认分支。不要 force-push。
 
-## D. 发布 GitHub Pages
+## D. GitHub Pages 发布配置
 
-本站是静态站点，所有发布文件已经在 `docs/`。按 [GitHub 官方发布源说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) 选择 **Deploy from a branch**，使用实际存在且已合并这些文件的分支和 `/docs` 目录，然后保存。
+当前配置为 **Deploy from a branch → main → /docs**，`docs/.nojekyll` 保证直接发布已有静态文件。GitHub Free 支持公开仓库的 Pages；本仓库已按维护者授权改为公开，未另建站点仓库。
 
-如果组织设置、仓库可见性或套餐限制 Pages，请遵循该仓库的配置要求；这些权限在本交付中未验证。`docs/.nojekyll` 已包含。不要把本地文件的存在误写为已经部署成功。成功部署且未配置自定义域名时，项目站点通常形如：
+发布地址为：
 
 ```text
 https://tornadolab.github.io/Awesome-Tornado-AI/
 ```
 
-实际可访问后，再把这个地址加入 README 的顶部导航和仓库 About 的 Website。当前模板不放一个未经验证的“在线成功”徽章。
+更新生成文件并推送到 `main` 后，GitHub 自动执行 **pages build and deployment**。在 [Actions](https://github.com/TornadoLab/Awesome-Tornado-AI/actions) 确认部署成功，再核对网站实际内容。网站地址已加入双语 README；发布配置参考 [GitHub 官方说明](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)。
 
 ## E. 更新文献
 
@@ -98,7 +98,7 @@ python tools/discover_arxiv.py --since 2026-09-01 --until 2026-09-29 --max-resul
 
 输出在 `review/candidates.json`，默认被 git 忽略。这个队列不是正式收录；需要人工审核。它只检索 arXiv 的一部分候选，不会覆盖 AMS、IEEE、中文期刊等全部来源。截断时缩小日期区间再检索。
 
-GitHub Actions 中也有 **Scout new arXiv candidates (manual)**。默认只能手动运行，无计划任务，也不会自动发 issue、提交或修改正式目录。需要固定周期时，再明确决定是否启用示例 cron，并安排审稿人。公开 API 连通性、实际 GitHub CI 和 Pages 部署仍需在有网络和仓库权限的环境中验证。
+GitHub Actions 中也有 **Scout new arXiv candidates (manual)**。默认只能手动运行，无计划任务，也不会自动发 issue、提交或修改正式目录。需要固定周期时，再明确决定是否启用示例 cron，并安排审稿人。外部检索 API 可能受限流影响；已成功的发布与检索记录不保证未来请求始终可用。
 
 ## G. 推荐的仓库 About 文案
 
@@ -115,4 +115,4 @@ weather-forecasting deep-learning multimodal-learning awesome-list ai4science
 
 ## H. 本次验证边界
 
-见 [交付检查报告](guides/QUALITY_REPORT.md)：31 项离线测试、21 项浏览器检查已通过；浏览器测试使用内存中的单文件页面。当前容器阻止本地页面导航，因此没有把它算作 HTTP / GitHub Pages 部署验证；实际跨刷新本地存储与外部 API 连通性仍需在目标环境检查。
+见 [交付检查报告](guides/QUALITY_REPORT.md)：Windows 本地回归测试 31 项通过、1 项因符号链接权限跳过；已在真实公开 HTTPS 网站上完成 31 项浏览器检查，覆盖搜索、引用导出、跨刷新存储、移动端和龙卷动画。复查线上网站可运行 `python tools/browser_smoke.py --url https://tornadolab.github.io/Awesome-Tornado-AI/`，浏览器依赖和参数见报告。
