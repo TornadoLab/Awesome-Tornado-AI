@@ -1,0 +1,92 @@
+[
+  {
+    "id": "foundations",
+    "name": "Foundations & dynamics",
+    "name_zh": "物理基础与龙卷动力学",
+    "number": "01"
+  },
+  {
+    "id": "climatology",
+    "name": "Climatology & environments",
+    "name_zh": "气候统计、环境与区域研究",
+    "number": "02"
+  },
+  {
+    "id": "radar",
+    "name": "Radar signatures & tracking",
+    "name_zh": "雷达特征、识别与追踪",
+    "number": "03"
+  },
+  {
+    "id": "rating",
+    "name": "Intensity & damage-based rating",
+    "name_zh": "强度估计与灾损分级",
+    "number": "04"
+  },
+  {
+    "id": "ml",
+    "name": "Statistical & classical ML",
+    "name_zh": "统计学习与传统机器学习",
+    "number": "05"
+  },
+  {
+    "id": "dl",
+    "name": "Deep tornado detection & prediction",
+    "name_zh": "深度学习检测与发生预测",
+    "number": "06"
+  },
+  {
+    "id": "forecast",
+    "name": "Probabilistic guidance & operations",
+    "name_zh": "概率预报、数值模式与业务应用",
+    "number": "07"
+  },
+  {
+    "id": "data",
+    "name": "Datasets & benchmarks",
+    "name_zh": "数据集与基准",
+    "number": "08"
+  },
+  {
+    "id": "agents",
+    "name": "Multimodal reasoning & agents",
+    "name_zh": "多模态推理与智能体",
+    "number": "09"
+  },
+  {
+    "id": "impacts",
+    "name": "Damage recognition & impacts",
+    "name_zh": "灾后视觉识别与影响评估",
+    "number": "10"
+  },
+  {
+    "id": "sensing",
+    "name": "Novel sensing & observation",
+    "name_zh": "新型观测与传感",
+    "number": "11"
+  },
+  {
+    "id": "evaluation",
+    "name": "Evaluation, uncertainty & reviews",
+    "name_zh": "评估、不确定性与综述",
+    "number": "12"
+  },
+  {
+    "id": "transfer",
+    "name": "Transferable weather AI",
+    "name_zh": "可迁移的天气 AI 方法",
+    "number": "13"
+  },
+  {
+    "id": "engineering",
+    "number": "14",
+    "name": "Wind engineering & structural resilience",
+    "name_zh": "风工程、结构荷载与抗灾设计"
+  },
+  {
+    "id": "social",
+    "number": "15",
+    "name": "Warnings, health & social response",
+    "name_zh": "预警传播、健康与社会响应"
+  }
+]

@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+<title id="title">TornadoLab research observatory</title><desc id="desc">Original decorative vortex and radar rings. Not real radar or weather data.</desc>
+<style>
+.vortex-body{transform-box:view-box;transform-origin:50% 80%;animation:vortex-sway 11s ease-in-out infinite}
+.vortex-flow{stroke-dasharray:17 31 7 45;animation:vortex-orbit var(--orbit) linear infinite;animation-delay:var(--phase);stroke-linecap:round}
+.vortex-dust{animation:vortex-drift var(--drift) ease-in-out infinite alternate;animation-delay:var(--phase);transform-box:fill-box;transform-origin:center}
+@keyframes vortex-orbit{to{stroke-dashoffset:-100}}
+@keyframes vortex-sway{0%,100%{transform:translateX(-3px) skewX(-1deg)}50%{transform:translateX(4px) skewX(1deg)}}
+@keyframes vortex-drift{from{transform:translate(-4px,6px);opacity:.15}to{transform:translate(5px,-9px);opacity:.6}}
+@media(prefers-reduced-motion:reduce){.vortex-body,.vortex-flow,.vortex-dust{animation:none}}
+</style>
+<defs><radialGradient id="halo"><stop stop-color="#64eac0" stop-opacity=".13"/><stop offset="1" stop-color="#64eac0" stop-opacity="0"/></radialGradient><linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4ad6b9" stop-opacity=".05"/><stop offset=".53" stop-color="#b2fba4" stop-opacity=".9"/><stop offset="1" stop-color="#51dce0" stop-opacity=".2"/></linearGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#8ae5d3" stroke-opacity=".05"/></pattern></defs>
+<rect width="1600" height="500" fill="#08151b"/>
+<rect width="1600" height="500" fill="url(#grid)"/>
+<circle cx="1260" cy="255" r="246.5" fill="url(#halo)"/>
+<circle cx="1260" cy="255" r="55.25" fill="none" stroke="#87d5c4" stroke-opacity=".13" stroke-width="1"/>
+<circle cx="1260" cy="255" r="97.75" fill="none" stroke="#87d5c4" stroke-opacity=".13" stroke-width="1"/>
+<circle cx="1260" cy="255" r="146.2" fill="none" stroke="#87d5c4" stroke-opacity=".13" stroke-width="1"/>
+<circle cx="1260" cy="255" r="194.65" fill="none" stroke="#87d5c4" stroke-opacity=".13" stroke-width="1"/>
+<circle cx="1260" cy="255" r="234.6" fill="none" stroke="#87d5c4" stroke-opacity=".13" stroke-width="1"/>
+<path d="M1483.55 255.00L1494.60 255.00" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1480.15 293.82L1484.34 294.56" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1470.07 331.46L1474.06 332.91" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1453.60 366.77L1463.17 372.30" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1431.25 398.70L1434.50 401.43" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1403.70 426.25L1406.43 429.50" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1371.78 448.60L1377.30 458.17" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1336.46 465.07L1337.91 469.06" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1298.82 475.15L1299.56 479.34" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1260.00 478.55L1260.00 489.60" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1221.18 475.15L1220.44 479.34" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1183.54 465.07L1182.09 469.06" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1148.23 448.60L1142.70 458.17" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1116.30 426.25L1113.57 429.50" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1088.75 398.70L1085.50 401.43" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1066.40 366.77L1056.83 372.30" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1049.93 331.46L1045.94 332.91" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1039.85 293.82L1035.66 294.56" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1036.45 255.00L1025.40 255.00" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1039.85 216.18L1035.66 215.44" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1049.93 178.54L1045.94 177.09" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1066.40 143.22L1056.83 137.70" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1088.75 111.30L1085.50 108.57" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1116.30 83.75L1113.57 80.50" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1148.22 61.40L1142.70 51.83" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1183.54 44.93L1182.09 40.94" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1221.18 34.85L1220.44 30.66" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1260.00 31.45L1260.00 20.40" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1298.82 34.85L1299.56 30.66" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1336.46 44.93L1337.91 40.94" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1371.78 61.40L1377.30 51.83" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1403.70 83.75L1406.43 80.50" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1431.25 111.30L1434.50 108.57" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1453.60 143.22L1463.17 137.70" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1470.07 178.54L1474.06 177.09" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1480.15 216.18L1484.34 215.44" stroke="#71d4c0" stroke-opacity=".35"/>
+<path d="M1005.0 255H1515.0M1260 12.75V493.0" stroke="#93d3c3" stroke-opacity=".12" stroke-dasharray="3 8"/>
+<g class="vortex-body">
+<ellipse cx="1260.00" cy="113.05" rx="149.60" ry="28.05" fill="none" stroke="url(#ribbon)" stroke-width="2.10" opacity="0.79" transform="rotate(-13.00 1260.00 113.05)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.80s;--phase:0.00s" cx="1260.00" cy="113.05" rx="149.60" ry="28.05" fill="none" stroke="#baf5b0" stroke-width="2.10" opacity="0.78" transform="rotate(-13.00 1260.00 113.05)"/>
+<ellipse cx="1262.72" cy="118.56" rx="146.14" ry="27.59" fill="none" stroke="url(#ribbon)" stroke-width="2.08" opacity="0.78" transform="rotate(-12.67 1262.72 118.56)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.74s;--phase:-0.31s" cx="1262.72" cy="118.56" rx="146.14" ry="27.59" fill="none" stroke="#70dec5" stroke-width="2.08" opacity="0.78" transform="rotate(-12.67 1262.72 118.56)"/>
+<ellipse cx="1265.41" cy="124.07" rx="142.70" ry="27.14" fill="none" stroke="url(#ribbon)" stroke-width="2.06" opacity="0.77" transform="rotate(-12.33 1265.41 124.07)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.68s;--phase:-0.62s" cx="1265.41" cy="124.07" rx="142.70" ry="27.14" fill="none" stroke="#70dec5" stroke-width="2.06" opacity="0.78" transform="rotate(-12.33 1265.41 124.07)"/>
+<ellipse cx="1268.06" cy="129.58" rx="139.28" ry="26.68" fill="none" stroke="url(#ribbon)" stroke-width="2.04" opacity="0.76" transform="rotate(-12.00 1268.06 129.58)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.61s;--phase:-0.93s" cx="1268.06" cy="129.58" rx="139.28" ry="26.68" fill="none" stroke="#baf5b0" stroke-width="2.04" opacity="0.78" transform="rotate(-12.00 1268.06 129.58)"/>
+<ellipse cx="1270.65" cy="135.09" rx="135.89" ry="26.22" fill="none" stroke="url(#ribbon)" stroke-width="2.03" opacity="0.75" transform="rotate(-11.67 1270.65 135.09)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.55s;--phase:-1.24s" cx="1270.65" cy="135.09" rx="135.89" ry="26.22" fill="none" stroke="#70dec5" stroke-width="2.03" opacity="0.78" transform="rotate(-11.67 1270.65 135.09)"/>
+<ellipse cx="1273.16" cy="140.60" rx="132.51" ry="25.77" fill="none" stroke="url(#ribbon)" stroke-width="2.01" opacity="0.74" transform="rotate(-11.33 1273.16 140.60)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.49s;--phase:-1.55s" cx="1273.16" cy="140.60" rx="132.51" ry="25.77" fill="none" stroke="#70dec5" stroke-width="2.01" opacity="0.78" transform="rotate(-11.33 1273.16 140.60)"/>
+<ellipse cx="1275.56" cy="146.11" rx="129.16" ry="25.31" fill="none" stroke="url(#ribbon)" stroke-width="1.99" opacity="0.73" transform="rotate(-11.00 1275.56 146.11)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.43s;--phase:-1.86s" cx="1275.56" cy="146.11" rx="129.16" ry="25.31" fill="none" stroke="#baf5b0" stroke-width="1.99" opacity="0.78" transform="rotate(-11.00 1275.56 146.11)"/>
+<ellipse cx="1277.83" cy="151.61" rx="125.83" ry="24.85" fill="none" stroke="url(#ribbon)" stroke-width="1.97" opacity="0.72" transform="rotate(-10.67 1277.83 151.61)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.37s;--phase:-2.17s" cx="1277.83" cy="151.61" rx="125.83" ry="24.85" fill="none" stroke="#70dec5" stroke-width="1.97" opacity="0.78" transform="rotate(-10.67 1277.83 151.61)"/>
+<ellipse cx="1279.97" cy="157.12" rx="122.52" ry="24.40" fill="none" stroke="url(#ribbon)" stroke-width="1.95" opacity="0.71" transform="rotate(-10.33 1279.97 157.12)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.30s;--phase:-2.48s" cx="1279.97" cy="157.12" rx="122.52" ry="24.40" fill="none" stroke="#70dec5" stroke-width="1.95" opacity="0.78" transform="rotate(-10.33 1279.97 157.12)"/>
+<ellipse cx="1281.95" cy="162.63" rx="119.24" ry="23.94" fill="none" stroke="url(#ribbon)" stroke-width="1.93" opacity="0.69" transform="rotate(-10.00 1281.95 162.63)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.24s;--phase:-2.79s" cx="1281.95" cy="162.63" rx="119.24" ry="23.94" fill="none" stroke="#baf5b0" stroke-width="1.93" opacity="0.78" transform="rotate(-10.00 1281.95 162.63)"/>
+<ellipse cx="1283.76" cy="168.14" rx="115.98" ry="23.49" fill="none" stroke="url(#ribbon)" stroke-width="1.91" opacity="0.68" transform="rotate(-9.67 1283.76 168.14)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.18s;--phase:-3.10s" cx="1283.76" cy="168.14" rx="115.98" ry="23.49" fill="none" stroke="#70dec5" stroke-width="1.91" opacity="0.78" transform="rotate(-9.67 1283.76 168.14)"/>
+<ellipse cx="1285.38" cy="173.65" rx="112.74" ry="23.03" fill="none" stroke="url(#ribbon)" stroke-width="1.90" opacity="0.67" transform="rotate(-9.33 1285.38 173.65)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.12s;--phase:-3.41s" cx="1285.38" cy="173.65" rx="112.74" ry="23.03" fill="none" stroke="#70dec5" stroke-width="1.90" opacity="0.78" transform="rotate(-9.33 1285.38 173.65)"/>
+<ellipse cx="1286.79" cy="179.16" rx="109.52" ry="22.57" fill="none" stroke="url(#ribbon)" stroke-width="1.88" opacity="0.66" transform="rotate(-9.00 1286.79 179.16)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:5.06s;--phase:-3.72s" cx="1286.79" cy="179.16" rx="109.52" ry="22.57" fill="none" stroke="#baf5b0" stroke-width="1.88" opacity="0.78" transform="rotate(-9.00 1286.79 179.16)"/>
+<ellipse cx="1288.00" cy="184.67" rx="106.33" ry="22.12" fill="none" stroke="url(#ribbon)" stroke-width="1.86" opacity="0.65" transform="rotate(-8.67 1288.00 184.67)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.99s;--phase:-4.03s" cx="1288.00" cy="184.67" rx="106.33" ry="22.12" fill="none" stroke="#70dec5" stroke-width="1.86" opacity="0.78" transform="rotate(-8.67 1288.00 184.67)"/>
+<ellipse cx="1288.98" cy="190.18" rx="103.17" ry="21.66" fill="none" stroke="url(#ribbon)" stroke-width="1.84" opacity="0.64" transform="rotate(-8.33 1288.98 190.18)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.93s;--phase:-4.34s" cx="1288.98" cy="190.18" rx="103.17" ry="21.66" fill="none" stroke="#70dec5" stroke-width="1.84" opacity="0.78" transform="rotate(-8.33 1288.98 190.18)"/>
+<ellipse cx="1289.74" cy="195.69" rx="100.03" ry="21.20" fill="none" stroke="url(#ribbon)" stroke-width="1.82" opacity="0.63" transform="rotate(-8.00 1289.74 195.69)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.87s;--phase:-4.65s" cx="1289.74" cy="195.69" rx="100.03" ry="21.20" fill="none" stroke="#baf5b0" stroke-width="1.82" opacity="0.78" transform="rotate(-8.00 1289.74 195.69)"/>
+<ellipse cx="1290.26" cy="201.20" rx="96.92" ry="20.75" fill="none" stroke="url(#ribbon)" stroke-width="1.80" opacity="0.62" transform="rotate(-7.67 1290.26 201.20)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.81s;--phase:-4.96s" cx="1290.26" cy="201.20" rx="96.92" ry="20.75" fill="none" stroke="#70dec5" stroke-width="1.80" opacity="0.78" transform="rotate(-7.67 1290.26 201.20)"/>
+<ellipse cx="1290.55" cy="206.71" rx="93.83" ry="20.29" fill="none" stroke="url(#ribbon)" stroke-width="1.79" opacity="0.61" transform="rotate(-7.33 1290.55 206.71)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.75s;--phase:-5.27s" cx="1290.55" cy="206.71" rx="93.83" ry="20.29" fill="none" stroke="#70dec5" stroke-width="1.79" opacity="0.78" transform="rotate(-7.33 1290.55 206.71)"/>
+<ellipse cx="1290.59" cy="212.22" rx="90.77" ry="19.83" fill="none" stroke="url(#ribbon)" stroke-width="1.77" opacity="0.60" transform="rotate(-7.00 1290.59 212.22)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.68s;--phase:-5.58s" cx="1290.59" cy="212.22" rx="90.77" ry="19.83" fill="none" stroke="#baf5b0" stroke-width="1.77" opacity="0.78" transform="rotate(-7.00 1290.59 212.22)"/>
+<ellipse cx="1290.39" cy="217.73" rx="87.73" ry="19.38" fill="none" stroke="url(#ribbon)" stroke-width="1.75" opacity="0.59" transform="rotate(-6.67 1290.39 217.73)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.62s;--phase:-5.89s" cx="1290.39" cy="217.73" rx="87.73" ry="19.38" fill="none" stroke="#70dec5" stroke-width="1.75" opacity="0.78" transform="rotate(-6.67 1290.39 217.73)"/>
+<ellipse cx="1289.95" cy="223.24" rx="84.73" ry="18.92" fill="none" stroke="url(#ribbon)" stroke-width="1.73" opacity="0.58" transform="rotate(-6.33 1289.95 223.24)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.56s;--phase:-6.20s" cx="1289.95" cy="223.24" rx="84.73" ry="18.92" fill="none" stroke="#70dec5" stroke-width="1.73" opacity="0.78" transform="rotate(-6.33 1289.95 223.24)"/>
+<ellipse cx="1289.27" cy="228.74" rx="81.75" ry="18.46" fill="none" stroke="url(#ribbon)" stroke-width="1.71" opacity="0.57" transform="rotate(-6.00 1289.27 228.74)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.50s;--phase:-6.51s" cx="1289.27" cy="228.74" rx="81.75" ry="18.46" fill="none" stroke="#baf5b0" stroke-width="1.71" opacity="0.78" transform="rotate(-6.00 1289.27 228.74)"/>
+<ellipse cx="1288.36" cy="234.25" rx="78.80" ry="18.01" fill="none" stroke="url(#ribbon)" stroke-width="1.69" opacity="0.56" transform="rotate(-5.67 1288.36 234.25)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.44s;--phase:-6.82s" cx="1288.36" cy="234.25" rx="78.80" ry="18.01" fill="none" stroke="#70dec5" stroke-width="1.69" opacity="0.78" transform="rotate(-5.67 1288.36 234.25)"/>
+<ellipse cx="1287.23" cy="239.76" rx="75.88" ry="17.55" fill="none" stroke="url(#ribbon)" stroke-width="1.67" opacity="0.55" transform="rotate(-5.33 1287.23 239.76)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.37s;--phase:-7.13s" cx="1287.23" cy="239.76" rx="75.88" ry="17.55" fill="none" stroke="#70dec5" stroke-width="1.67" opacity="0.78" transform="rotate(-5.33 1287.23 239.76)"/>
+<ellipse cx="1285.88" cy="245.27" rx="72.99" ry="17.09" fill="none" stroke="url(#ribbon)" stroke-width="1.66" opacity="0.54" transform="rotate(-5.00 1285.88 245.27)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.31s;--phase:-7.44s" cx="1285.88" cy="245.27" rx="72.99" ry="17.09" fill="none" stroke="#baf5b0" stroke-width="1.66" opacity="0.78" transform="rotate(-5.00 1285.88 245.27)"/>
+<ellipse cx="1284.33" cy="250.78" rx="70.13" ry="16.64" fill="none" stroke="url(#ribbon)" stroke-width="1.64" opacity="0.53" transform="rotate(-4.67 1284.33 250.78)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.25s;--phase:-7.75s" cx="1284.33" cy="250.78" rx="70.13" ry="16.64" fill="none" stroke="#70dec5" stroke-width="1.64" opacity="0.78" transform="rotate(-4.67 1284.33 250.78)"/>
+<ellipse cx="1282.59" cy="256.29" rx="67.30" ry="16.18" fill="none" stroke="url(#ribbon)" stroke-width="1.62" opacity="0.52" transform="rotate(-4.33 1282.59 256.29)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.19s;--phase:-8.06s" cx="1282.59" cy="256.29" rx="67.30" ry="16.18" fill="none" stroke="#70dec5" stroke-width="1.62" opacity="0.78" transform="rotate(-4.33 1282.59 256.29)"/>
+<ellipse cx="1280.67" cy="261.80" rx="64.51" ry="15.72" fill="none" stroke="url(#ribbon)" stroke-width="1.60" opacity="0.51" transform="rotate(-4.00 1280.67 261.80)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.13s;--phase:-8.37s" cx="1280.67" cy="261.80" rx="64.51" ry="15.72" fill="none" stroke="#baf5b0" stroke-width="1.60" opacity="0.78" transform="rotate(-4.00 1280.67 261.80)"/>
+<ellipse cx="1278.58" cy="267.31" rx="61.74" ry="15.27" fill="none" stroke="url(#ribbon)" stroke-width="1.58" opacity="0.49" transform="rotate(-3.67 1278.58 267.31)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.06s;--phase:-8.68s" cx="1278.58" cy="267.31" rx="61.74" ry="15.27" fill="none" stroke="#70dec5" stroke-width="1.58" opacity="0.78" transform="rotate(-3.67 1278.58 267.31)"/>
+<ellipse cx="1276.35" cy="272.82" rx="59.01" ry="14.81" fill="none" stroke="url(#ribbon)" stroke-width="1.56" opacity="0.48" transform="rotate(-3.33 1276.35 272.82)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:4.00s;--phase:-8.99s" cx="1276.35" cy="272.82" rx="59.01" ry="14.81" fill="none" stroke="#70dec5" stroke-width="1.56" opacity="0.78" transform="rotate(-3.33 1276.35 272.82)"/>
+<ellipse cx="1273.99" cy="278.33" rx="56.32" ry="14.36" fill="none" stroke="url(#ribbon)" stroke-width="1.54" opacity="0.47" transform="rotate(-3.00 1273.99 278.33)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.94s;--phase:-9.30s" cx="1273.99" cy="278.33" rx="56.32" ry="14.36" fill="none" stroke="#baf5b0" stroke-width="1.54" opacity="0.78" transform="rotate(-3.00 1273.99 278.33)"/>
+<ellipse cx="1271.52" cy="283.84" rx="53.66" ry="13.90" fill="none" stroke="url(#ribbon)" stroke-width="1.53" opacity="0.46" transform="rotate(-2.67 1271.52 283.84)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.88s;--phase:-9.61s" cx="1271.52" cy="283.84" rx="53.66" ry="13.90" fill="none" stroke="#70dec5" stroke-width="1.53" opacity="0.78" transform="rotate(-2.67 1271.52 283.84)"/>
+<ellipse cx="1268.96" cy="289.35" rx="51.04" ry="13.44" fill="none" stroke="url(#ribbon)" stroke-width="1.51" opacity="0.45" transform="rotate(-2.33 1268.96 289.35)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.82s;--phase:-9.92s" cx="1268.96" cy="289.35" rx="51.04" ry="13.44" fill="none" stroke="#70dec5" stroke-width="1.51" opacity="0.78" transform="rotate(-2.33 1268.96 289.35)"/>
+<ellipse cx="1266.33" cy="294.86" rx="48.45" ry="12.99" fill="none" stroke="url(#ribbon)" stroke-width="1.49" opacity="0.44" transform="rotate(-2.00 1266.33 294.86)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.75s;--phase:-10.23s" cx="1266.33" cy="294.86" rx="48.45" ry="12.99" fill="none" stroke="#baf5b0" stroke-width="1.49" opacity="0.78" transform="rotate(-2.00 1266.33 294.86)"/>
+<ellipse cx="1263.64" cy="300.36" rx="45.91" ry="12.53" fill="none" stroke="url(#ribbon)" stroke-width="1.47" opacity="0.43" transform="rotate(-1.67 1263.64 300.36)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.69s;--phase:-10.54s" cx="1263.64" cy="300.36" rx="45.91" ry="12.53" fill="none" stroke="#70dec5" stroke-width="1.47" opacity="0.78" transform="rotate(-1.67 1263.64 300.36)"/>
+<ellipse cx="1260.93" cy="305.87" rx="43.40" ry="12.07" fill="none" stroke="url(#ribbon)" stroke-width="1.45" opacity="0.42" transform="rotate(-1.33 1260.93 305.87)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.63s;--phase:-10.85s" cx="1260.93" cy="305.87" rx="43.40" ry="12.07" fill="none" stroke="#70dec5" stroke-width="1.45" opacity="0.78" transform="rotate(-1.33 1260.93 305.87)"/>
+<ellipse cx="1258.21" cy="311.38" rx="40.94" ry="11.62" fill="none" stroke="url(#ribbon)" stroke-width="1.43" opacity="0.41" transform="rotate(-1.00 1258.21 311.38)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.57s;--phase:-11.16s" cx="1258.21" cy="311.38" rx="40.94" ry="11.62" fill="none" stroke="#baf5b0" stroke-width="1.43" opacity="0.78" transform="rotate(-1.00 1258.21 311.38)"/>
+<ellipse cx="1255.51" cy="316.89" rx="38.52" ry="11.16" fill="none" stroke="url(#ribbon)" stroke-width="1.41" opacity="0.40" transform="rotate(-0.67 1255.51 316.89)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.51s;--phase:-11.47s" cx="1255.51" cy="316.89" rx="38.52" ry="11.16" fill="none" stroke="#70dec5" stroke-width="1.41" opacity="0.78" transform="rotate(-0.67 1255.51 316.89)"/>
+<ellipse cx="1252.84" cy="322.40" rx="36.15" ry="10.70" fill="none" stroke="url(#ribbon)" stroke-width="1.40" opacity="0.39" transform="rotate(-0.33 1252.84 322.40)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.44s;--phase:-11.78s" cx="1252.84" cy="322.40" rx="36.15" ry="10.70" fill="none" stroke="#70dec5" stroke-width="1.40" opacity="0.78" transform="rotate(-0.33 1252.84 322.40)"/>
+<ellipse cx="1250.23" cy="327.91" rx="33.82" ry="10.25" fill="none" stroke="url(#ribbon)" stroke-width="1.38" opacity="0.38" transform="rotate(0.00 1250.23 327.91)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.38s;--phase:-12.09s" cx="1250.23" cy="327.91" rx="33.82" ry="10.25" fill="none" stroke="#baf5b0" stroke-width="1.38" opacity="0.78" transform="rotate(0.00 1250.23 327.91)"/>
+<ellipse cx="1247.69" cy="333.42" rx="31.54" ry="9.79" fill="none" stroke="url(#ribbon)" stroke-width="1.36" opacity="0.37" transform="rotate(0.33 1247.69 333.42)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.32s;--phase:-12.40s" cx="1247.69" cy="333.42" rx="31.54" ry="9.79" fill="none" stroke="#70dec5" stroke-width="1.36" opacity="0.78" transform="rotate(0.33 1247.69 333.42)"/>
+<ellipse cx="1245.25" cy="338.93" rx="29.32" ry="9.33" fill="none" stroke="url(#ribbon)" stroke-width="1.34" opacity="0.36" transform="rotate(0.67 1245.25 338.93)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.26s;--phase:-12.71s" cx="1245.25" cy="338.93" rx="29.32" ry="9.33" fill="none" stroke="#70dec5" stroke-width="1.34" opacity="0.78" transform="rotate(0.67 1245.25 338.93)"/>
+<ellipse cx="1242.93" cy="344.44" rx="27.14" ry="8.88" fill="none" stroke="url(#ribbon)" stroke-width="1.32" opacity="0.35" transform="rotate(1.00 1242.93 344.44)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.20s;--phase:-13.02s" cx="1242.93" cy="344.44" rx="27.14" ry="8.88" fill="none" stroke="#baf5b0" stroke-width="1.32" opacity="0.78" transform="rotate(1.00 1242.93 344.44)"/>
+<ellipse cx="1240.74" cy="349.95" rx="25.03" ry="8.42" fill="none" stroke="url(#ribbon)" stroke-width="1.30" opacity="0.34" transform="rotate(1.33 1240.74 349.95)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.13s;--phase:-13.33s" cx="1240.74" cy="349.95" rx="25.03" ry="8.42" fill="none" stroke="#70dec5" stroke-width="1.30" opacity="0.78" transform="rotate(1.33 1240.74 349.95)"/>
+<ellipse cx="1238.71" cy="355.46" rx="22.97" ry="7.96" fill="none" stroke="url(#ribbon)" stroke-width="1.29" opacity="0.33" transform="rotate(1.67 1238.71 355.46)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.07s;--phase:-13.64s" cx="1238.71" cy="355.46" rx="22.97" ry="7.96" fill="none" stroke="#70dec5" stroke-width="1.29" opacity="0.78" transform="rotate(1.67 1238.71 355.46)"/>
+<ellipse cx="1236.84" cy="360.97" rx="20.98" ry="7.51" fill="none" stroke="url(#ribbon)" stroke-width="1.27" opacity="0.31" transform="rotate(2.00 1236.84 360.97)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:3.01s;--phase:-13.95s" cx="1236.84" cy="360.97" rx="20.98" ry="7.51" fill="none" stroke="#baf5b0" stroke-width="1.27" opacity="0.78" transform="rotate(2.00 1236.84 360.97)"/>
+<ellipse cx="1235.16" cy="366.48" rx="19.06" ry="7.05" fill="none" stroke="url(#ribbon)" stroke-width="1.25" opacity="0.30" transform="rotate(2.33 1235.16 366.48)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.95s;--phase:-14.26s" cx="1235.16" cy="366.48" rx="19.06" ry="7.05" fill="none" stroke="#70dec5" stroke-width="1.25" opacity="0.78" transform="rotate(2.33 1235.16 366.48)"/>
+<ellipse cx="1233.67" cy="371.99" rx="17.22" ry="6.60" fill="none" stroke="url(#ribbon)" stroke-width="1.23" opacity="0.29" transform="rotate(2.67 1233.67 371.99)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.89s;--phase:-14.57s" cx="1233.67" cy="371.99" rx="17.22" ry="6.60" fill="none" stroke="#70dec5" stroke-width="1.23" opacity="0.78" transform="rotate(2.67 1233.67 371.99)"/>
+<ellipse cx="1232.39" cy="377.49" rx="15.46" ry="6.14" fill="none" stroke="url(#ribbon)" stroke-width="1.21" opacity="0.28" transform="rotate(3.00 1232.39 377.49)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.82s;--phase:-14.88s" cx="1232.39" cy="377.49" rx="15.46" ry="6.14" fill="none" stroke="#baf5b0" stroke-width="1.21" opacity="0.78" transform="rotate(3.00 1232.39 377.49)"/>
+<ellipse cx="1231.33" cy="383.00" rx="13.79" ry="5.68" fill="none" stroke="url(#ribbon)" stroke-width="1.19" opacity="0.27" transform="rotate(3.33 1231.33 383.00)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.76s;--phase:-15.19s" cx="1231.33" cy="383.00" rx="13.79" ry="5.68" fill="none" stroke="#70dec5" stroke-width="1.19" opacity="0.78" transform="rotate(3.33 1231.33 383.00)"/>
+<ellipse cx="1230.49" cy="388.51" rx="12.22" ry="5.23" fill="none" stroke="url(#ribbon)" stroke-width="1.17" opacity="0.26" transform="rotate(3.67 1230.49 388.51)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.70s;--phase:-15.50s" cx="1230.49" cy="388.51" rx="12.22" ry="5.23" fill="none" stroke="#70dec5" stroke-width="1.17" opacity="0.78" transform="rotate(3.67 1230.49 388.51)"/>
+<ellipse cx="1229.89" cy="394.02" rx="10.78" ry="4.77" fill="none" stroke="url(#ribbon)" stroke-width="1.16" opacity="0.25" transform="rotate(4.00 1229.89 394.02)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.64s;--phase:-15.81s" cx="1229.89" cy="394.02" rx="10.78" ry="4.77" fill="none" stroke="#baf5b0" stroke-width="1.16" opacity="0.78" transform="rotate(4.00 1229.89 394.02)"/>
+<ellipse cx="1229.52" cy="399.53" rx="9.48" ry="4.31" fill="none" stroke="url(#ribbon)" stroke-width="1.14" opacity="0.24" transform="rotate(4.33 1229.52 399.53)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.58s;--phase:-16.12s" cx="1229.52" cy="399.53" rx="9.48" ry="4.31" fill="none" stroke="#70dec5" stroke-width="1.14" opacity="0.78" transform="rotate(4.33 1229.52 399.53)"/>
+<ellipse cx="1229.40" cy="405.04" rx="8.38" ry="3.86" fill="none" stroke="url(#ribbon)" stroke-width="1.12" opacity="0.23" transform="rotate(4.67 1229.40 405.04)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.51s;--phase:-16.43s" cx="1229.40" cy="405.04" rx="8.38" ry="3.86" fill="none" stroke="#70dec5" stroke-width="1.12" opacity="0.78" transform="rotate(4.67 1229.40 405.04)"/>
+<ellipse cx="1229.52" cy="410.55" rx="7.65" ry="3.40" fill="none" stroke="url(#ribbon)" stroke-width="1.10" opacity="0.22" transform="rotate(5.00 1229.52 410.55)"/>
+<ellipse class="vortex-flow" pathLength="100" style="--orbit:2.45s;--phase:-16.74s" cx="1229.52" cy="410.55" rx="7.65" ry="3.40" fill="none" stroke="#baf5b0" stroke-width="1.10" opacity="0.78" transform="rotate(5.00 1229.52 410.55)"/>
+</g>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:0.00s" cx="1235.01" cy="386.83" r="1.22" fill="#95ebc8" opacity="0.35"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-0.21s" cx="1147.05" cy="186.53" r="1.17" fill="#95ebc8" opacity="0.21"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-0.42s" cx="1336.53" cy="318.63" r="1.46" fill="#95ebc8" opacity="0.11"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-0.63s" cx="1186.35" cy="353.49" r="1.21" fill="#95ebc8" opacity="0.34"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-0.84s" cx="1380.04" cy="101.07" r="1.23" fill="#95ebc8" opacity="0.21"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-1.05s" cx="1389.98" cy="125.11" r="1.11" fill="#95ebc8" opacity="0.54"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-1.26s" cx="1407.36" cy="124.08" r="0.85" fill="#95ebc8" opacity="0.22"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-1.47s" cx="1293.10" cy="158.79" r="0.90" fill="#95ebc8" opacity="0.13"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-1.68s" cx="1267.43" cy="158.31" r="0.79" fill="#95ebc8" opacity="0.44"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-1.89s" cx="1409.96" cy="342.77" r="0.69" fill="#95ebc8" opacity="0.63"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-2.10s" cx="1316.59" cy="316.73" r="1.11" fill="#95ebc8" opacity="0.52"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-2.31s" cx="1097.40" cy="268.21" r="0.87" fill="#95ebc8" opacity="0.57"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-2.52s" cx="1295.38" cy="370.99" r="1.48" fill="#95ebc8" opacity="0.32"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-2.73s" cx="1413.41" cy="314.60" r="0.70" fill="#95ebc8" opacity="0.33"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-2.94s" cx="1186.86" cy="365.34" r="0.75" fill="#95ebc8" opacity="0.61"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-3.15s" cx="1313.92" cy="125.11" r="0.93" fill="#95ebc8" opacity="0.31"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-3.36s" cx="1253.23" cy="375.72" r="1.14" fill="#95ebc8" opacity="0.51"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-3.57s" cx="1420.65" cy="364.84" r="1.59" fill="#95ebc8" opacity="0.39"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-3.78s" cx="1186.96" cy="232.48" r="0.84" fill="#95ebc8" opacity="0.12"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-3.99s" cx="1387.59" cy="359.77" r="0.82" fill="#95ebc8" opacity="0.48"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-4.20s" cx="1281.64" cy="134.95" r="1.35" fill="#95ebc8" opacity="0.42"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-4.41s" cx="1152.47" cy="155.36" r="1.31" fill="#95ebc8" opacity="0.19"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-4.62s" cx="1352.53" cy="252.18" r="0.75" fill="#95ebc8" opacity="0.23"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-4.83s" cx="1342.85" cy="72.00" r="1.69" fill="#95ebc8" opacity="0.17"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-5.04s" cx="1133.86" cy="368.09" r="0.72" fill="#95ebc8" opacity="0.33"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-5.25s" cx="1166.71" cy="213.81" r="0.93" fill="#95ebc8" opacity="0.36"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-5.46s" cx="1385.58" cy="396.33" r="1.12" fill="#95ebc8" opacity="0.19"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-5.67s" cx="1145.25" cy="258.14" r="1.30" fill="#95ebc8" opacity="0.14"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-5.88s" cx="1210.61" cy="309.45" r="1.26" fill="#95ebc8" opacity="0.37"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-6.09s" cx="1300.95" cy="108.17" r="1.17" fill="#95ebc8" opacity="0.44"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-6.30s" cx="1201.80" cy="379.72" r="1.02" fill="#95ebc8" opacity="0.35"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-6.51s" cx="1205.50" cy="288.29" r="0.82" fill="#95ebc8" opacity="0.42"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-6.72s" cx="1343.72" cy="334.92" r="1.49" fill="#95ebc8" opacity="0.37"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-6.93s" cx="1276.23" cy="146.47" r="0.60" fill="#95ebc8" opacity="0.34"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-7.14s" cx="1266.53" cy="123.69" r="1.00" fill="#95ebc8" opacity="0.57"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-7.35s" cx="1129.72" cy="399.59" r="1.40" fill="#95ebc8" opacity="0.20"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-7.56s" cx="1159.40" cy="137.38" r="1.25" fill="#95ebc8" opacity="0.48"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-7.77s" cx="1127.70" cy="358.93" r="1.26" fill="#95ebc8" opacity="0.53"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-7.98s" cx="1270.60" cy="106.98" r="1.18" fill="#95ebc8" opacity="0.22"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-8.19s" cx="1369.90" cy="328.80" r="1.14" fill="#95ebc8" opacity="0.30"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-8.40s" cx="1075.58" cy="258.93" r="1.55" fill="#95ebc8" opacity="0.59"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-8.61s" cx="1322.35" cy="324.69" r="1.54" fill="#95ebc8" opacity="0.56"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-8.82s" cx="1305.49" cy="421.94" r="0.64" fill="#95ebc8" opacity="0.32"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-9.03s" cx="1177.79" cy="168.47" r="1.54" fill="#95ebc8" opacity="0.22"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-9.24s" cx="1332.41" cy="356.99" r="0.90" fill="#95ebc8" opacity="0.51"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-9.45s" cx="1229.27" cy="181.67" r="0.79" fill="#95ebc8" opacity="0.13"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-9.66s" cx="1354.49" cy="229.57" r="0.79" fill="#95ebc8" opacity="0.26"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-9.87s" cx="1181.43" cy="290.10" r="1.38" fill="#95ebc8" opacity="0.38"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-10.08s" cx="1150.21" cy="420.85" r="1.20" fill="#95ebc8" opacity="0.49"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-10.29s" cx="1205.63" cy="363.57" r="1.62" fill="#95ebc8" opacity="0.19"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-10.50s" cx="1360.98" cy="230.46" r="0.61" fill="#95ebc8" opacity="0.32"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-10.71s" cx="1336.67" cy="127.66" r="1.11" fill="#95ebc8" opacity="0.12"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-10.92s" cx="1060.18" cy="214.98" r="1.51" fill="#95ebc8" opacity="0.56"/>
+<circle class="vortex-dust" style="--drift:6.4s;--phase:-11.13s" cx="1342.72" cy="284.39" r="0.94" fill="#95ebc8" opacity="0.52"/>
+<circle class="vortex-dust" style="--drift:7.0s;--phase:-11.34s" cx="1162.79" cy="210.08" r="0.67" fill="#95ebc8" opacity="0.27"/>
+<circle class="vortex-dust" style="--drift:7.6s;--phase:-11.55s" cx="1170.13" cy="135.18" r="1.62" fill="#95ebc8" opacity="0.43"/>
+<circle class="vortex-dust" style="--drift:4.0s;--phase:-11.76s" cx="1240.15" cy="194.21" r="0.95" fill="#95ebc8" opacity="0.16"/>
+<circle class="vortex-dust" style="--drift:4.6s;--phase:-11.97s" cx="1218.91" cy="422.58" r="1.19" fill="#95ebc8" opacity="0.51"/>
+<circle class="vortex-dust" style="--drift:5.2s;--phase:-12.18s" cx="1352.54" cy="182.02" r="1.05" fill="#95ebc8" opacity="0.11"/>
+<circle class="vortex-dust" style="--drift:5.8s;--phase:-12.39s" cx="1122.78" cy="187.19" r="1.68" fill="#95ebc8" opacity="0.28"/>
+<path d="M1376.45 174.25h45l20 -20h37" fill="none" stroke="#b7efac" stroke-opacity=".6"/>
+<circle cx="1376.45" cy="174.25" r="3" fill="#c5f5a0"/>
+<text x="76" y="88" fill="#a3ecca" font-size="15" font-family="monospace" letter-spacing="4">TORNADOLAB / OPEN RESEARCH</text>
+<text x="70" y="200" fill="#edf5ed" font-size="76" font-weight="700" font-family="Arial, sans-serif" letter-spacing="-3">AWESOME</text>
+<text x="70" y="288" fill="#c6f78e" font-size="76" font-weight="700" font-family="Arial, sans-serif" letter-spacing="-3">TORNADO AI</text>
+<text x="76" y="346" fill="#b2c6c7" font-size="23" font-family="Arial, sans-serif">From the first echo to the next frontier.</text>
+<path d="M76 391H760" stroke="#51726d" stroke-opacity=".5"/>
+<text x="76" y="433" fill="#a8c0bc" font-size="13" font-family="monospace" letter-spacing="2">PHYSICS  /  RADAR  /  PREDICTION  /  INTELLIGENCE</text>
+</svg>

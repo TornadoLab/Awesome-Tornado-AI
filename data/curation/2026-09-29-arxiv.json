@@ -1,0 +1,328 @@
+{
+  "mode": "arxiv_api",
+  "query": "(ti:tornado OR abs:tornado OR ti:tornadic OR abs:tornadic) AND submittedDate:[202601010000 TO 202609292359]",
+  "query_url": "https://export.arxiv.org/api/query?search_query=%28ti%3Atornado+OR+abs%3Atornado+OR+ti%3Atornadic+OR+abs%3Atornadic%29+AND+submittedDate%3A%5B202601010000+TO+202609292359%5D&start=0&max_results=200&sortBy=submittedDate&sortOrder=descending",
+  "since": "2026-01-01",
+  "until": "2026-09-29",
+  "total_api_results": 24,
+  "requested_limit": 200,
+  "possibly_truncated": false,
+  "notice": "One dated arXiv query, manually screened after retrieval. Not an exhaustive cross-database review. No full abstracts copied.",
+  "candidates": [
+    {
+      "arxiv": "2609.23405",
+      "title": "The Anatomy of Address Poisoning on Ethereum: Funding Mechanisms, Scam Signatures, and Laundering via Tornado Cash",
+      "authors": [
+        "Son Hoang Dau",
+        "Thanh Nguyen",
+        "Phuong Duy Huynh",
+        "Hong Yen Tran",
+        "Nicholas Huppert",
+        "Jeff Nijsse",
+        "Huong Ha",
+        "Xun Yi"
+      ],
+      "first_submitted": "2026-09-20T06:38:00Z",
+      "updated": "2026-09-20T06:38:00Z",
+      "url": "https://arxiv.org/abs/2609.23405",
+      "review_status": "excluded",
+      "reason": "Tornado Cash cryptocurrency mixer; not an atmospheric tornado."
+    },
+    {
+      "arxiv": "2609.27807",
+      "title": "MixGuard: Towards Detecting and Understanding Mixer Laundering on Ethereum",
+      "authors": [
+        "Qishuang Fu",
+        "Hang Zheng",
+        "Xihan Xiong",
+        "Joseph K. Liu",
+        "Yixin Liu",
+        "Shirui Pan",
+        "Qin Wang",
+        "Weiqing Wang",
+        "Zhipeng Wang",
+        "Tsz Hon Yuen"
+      ],
+      "first_submitted": "2026-09-15T23:00:32Z",
+      "updated": "2026-09-15T23:00:32Z",
+      "url": "https://arxiv.org/abs/2609.27807",
+      "review_status": "excluded",
+      "reason": "Ethereum money laundering and cryptocurrency mixers."
+    },
+    {
+      "arxiv": "2609.16410",
+      "title": "bayprior: Structured Bayesian Prior Elicitation, Conflict Diagnostics, and Regulatory Reporting",
+      "authors": [
+        "Ndoh Penn"
+      ],
+      "first_submitted": "2026-09-14T22:29:21Z",
+      "updated": "2026-09-14T22:29:21Z",
+      "url": "https://arxiv.org/abs/2609.16410",
+      "review_status": "excluded",
+      "reason": "Bayesian prior-elicitation software; tornado-chart sensitivity analysis is not atmospheric tornado research."
+    },
+    {
+      "arxiv": "2609.01692",
+      "title": "Baseline Climatology of Tornadoes and Waterspouts in the Philippine Archipelago",
+      "authors": [
+        "Generich H. Capuli"
+      ],
+      "first_submitted": "2026-09-01T16:17:20Z",
+      "updated": "2026-09-03T06:25:00Z",
+      "url": "https://arxiv.org/abs/2609.01692",
+      "review_status": "included",
+      "catalog_id": "capuli2026climate",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2608.30633",
+      "title": "Quantum-Grassmann-Plucker Token Mixing for Deep Learning-Based Post-Disaster Damage Assessment",
+      "authors": [
+        "Kooroush Farahkhah",
+        "Umut Lagap",
+        "Taha Rezaei",
+        "Saman Ghaffarian"
+      ],
+      "first_submitted": "2026-08-31T11:42:27Z",
+      "updated": "2026-08-31T11:42:27Z",
+      "url": "https://arxiv.org/abs/2608.30633",
+      "review_status": "included",
+      "catalog_id": "farahkhah2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2608.00416",
+      "title": "A note on the shear-forced dynamics of tornadoes",
+      "authors": [
+        "Chanh Kieu"
+      ],
+      "first_submitted": "2026-08-01T03:35:40Z",
+      "updated": "2026-08-01T03:35:40Z",
+      "url": "https://arxiv.org/abs/2608.00416",
+      "review_status": "included",
+      "catalog_id": "kieu2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2607.13105",
+      "title": "Biased-Noise Quantum Reed-Solomon Codes and a Tornado Concatenation for Cat Qubits",
+      "authors": [
+        "Cheng-You Ho",
+        "Daniel Wang",
+        "Simba Shi",
+        "Justin Luo",
+        "Henry Ng"
+      ],
+      "first_submitted": "2026-07-14T09:42:53Z",
+      "updated": "2026-07-21T22:49:23Z",
+      "url": "https://arxiv.org/abs/2607.13105",
+      "review_status": "excluded",
+      "reason": "Quantum coding architecture named Tornado; no atmospheric tornado task."
+    },
+    {
+      "arxiv": "2607.11838",
+      "title": "HASTE: A Platform for Rapid Post-Disaster Building Damage Assessment",
+      "authors": [
+        "Caleb Robinson",
+        "Anthony Ortiz",
+        "Simone Fobi Nsutezo",
+        "Cameron Birge",
+        "Meygha Machado",
+        "Marcelo Duarte",
+        "Joaquin Rivero Rodriguez",
+        "Anthony Cintron Roman",
+        "Kevin White",
+        "Inbal Becker-Reshef",
+        "Juan M. Lavista Ferres"
+      ],
+      "first_submitted": "2026-07-13T17:27:53Z",
+      "updated": "2026-07-13T17:27:53Z",
+      "url": "https://arxiv.org/abs/2607.11838",
+      "review_status": "included",
+      "catalog_id": "robinson2026haste",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2607.00061",
+      "title": "Fractal-Fractional HIV Dynamics with Mittag-Leffler Kernel: Analysis, Stability, and Numerical Simulations",
+      "authors": [
+        "Niaz Ali Shah",
+        "Samad Noeiaghdam"
+      ],
+      "first_submitted": "2026-06-30T09:33:19Z",
+      "updated": "2026-06-30T09:33:19Z",
+      "url": "https://arxiv.org/abs/2607.00061",
+      "review_status": "excluded",
+      "reason": "Mathematical HIV epidemic model; outside atmospheric tornado research."
+    },
+    {
+      "arxiv": "2606.22827",
+      "title": "What You See Is Not What You Execute: Memory-Based Runtime SBOM Generation for Supply Chain Security",
+      "authors": [
+        "Hala Ali",
+        "Andrew Case",
+        "Irfan Ahmed"
+      ],
+      "first_submitted": "2026-06-22T04:08:26Z",
+      "updated": "2026-06-26T07:52:58Z",
+      "url": "https://arxiv.org/abs/2606.22827",
+      "review_status": "excluded",
+      "reason": "Software bill-of-materials and runtime security; not meteorological observation."
+    },
+    {
+      "arxiv": "2606.22291",
+      "title": "Singular stationary Navier-Stokes flows: examples and stability",
+      "authors": [
+        "Zachary Bradshaw",
+        "Dakota Palmer"
+      ],
+      "first_submitted": "2026-06-21T01:29:12Z",
+      "updated": "2026-06-21T01:29:12Z",
+      "url": "https://arxiv.org/abs/2606.22291",
+      "review_status": "included",
+      "catalog_id": "bradshaw2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2605.23053",
+      "title": "A Comparative Multi-Hazard Risk Assessment of the US High-Voltage Transmission Network",
+      "authors": [
+        "D. Bor",
+        "E. J. Oughton",
+        "R. S. Weigel",
+        "R. Yang",
+        "T. Clower",
+        "A. Newman",
+        "A. R. Valle"
+      ],
+      "first_submitted": "2026-05-21T21:36:17Z",
+      "updated": "2026-05-21T21:36:17Z",
+      "url": "https://arxiv.org/abs/2605.23053",
+      "review_status": "included",
+      "catalog_id": "bor2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2605.11521",
+      "title": "XWOD: A Real-World Benchmark for Object Detection under Extreme Weather Conditions",
+      "authors": [
+        "Chih-Hsin Chen",
+        "Yu-Tung Liu",
+        "Amar Fadillah",
+        "Kuan-Ting Lai",
+        "Dong Liu"
+      ],
+      "first_submitted": "2026-05-12T04:46:15Z",
+      "updated": "2026-05-12T04:46:15Z",
+      "url": "https://arxiv.org/abs/2605.11521",
+      "review_status": "included",
+      "catalog_id": "chen2026xwod",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2604.26094",
+      "title": "GenDetect: Generalizing Reactive Detection for Resilience Against Imitative DeFi Attack Cascade",
+      "authors": [
+        "Bowen Cai",
+        "Weiheng Bai",
+        "Youshui Lu",
+        "Haoran Xu",
+        "Yuannan Yang",
+        "Yajin Zhou",
+        "Kangjie Lu"
+      ],
+      "first_submitted": "2026-04-28T20:18:02Z",
+      "updated": "2026-04-28T20:18:02Z",
+      "url": "https://arxiv.org/abs/2604.26094",
+      "review_status": "excluded",
+      "reason": "DeFi attack detection; cryptocurrency Tornado naming is unrelated to tornado weather."
+    },
+    {
+      "arxiv": "2604.24831",
+      "title": "FGDM: Reasoning Aware Multi-Agentic Framework for Software Bug Detection using Chain of Thought and Tree of Thought Prompting",
+      "authors": [
+        "Srita Padmanabhuni",
+        "Bhargavi Karuturi",
+        "Jerusha Karen Indupalli",
+        "Santhan Reddy Chilla",
+        "Vivek Yelleti"
+      ],
+      "first_submitted": "2026-04-27T17:22:15Z",
+      "updated": "2026-04-27T17:22:15Z",
+      "url": "https://arxiv.org/abs/2604.24831",
+      "review_status": "excluded",
+      "reason": "Software bug detection with agents; no atmospheric tornado evaluation."
+    },
+    {
+      "arxiv": "2603.24233",
+      "title": "Can hot water discharged from industrial processes enhance the likelihood of waterspouts?",
+      "authors": [
+        "Valerio Capecchi",
+        "Bernardo Gozzini",
+        "Mario Marcello Miglietta"
+      ],
+      "first_submitted": "2026-03-25T12:13:51Z",
+      "updated": "2026-03-25T12:13:51Z",
+      "url": "https://arxiv.org/abs/2603.24233",
+      "review_status": "included",
+      "catalog_id": "capecchi2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2603.22768",
+      "title": "From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detection in Satellite Imagery",
+      "authors": [
+        "Bijay Shakya",
+        "Catherine Hoier",
+        "Khandaker Mamun Ahmed"
+      ],
+      "first_submitted": "2026-03-24T03:50:41Z",
+      "updated": "2026-03-24T03:50:41Z",
+      "url": "https://arxiv.org/abs/2603.22768",
+      "review_status": "included",
+      "catalog_id": "shakya2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2603.11557",
+      "title": "TornadoNet: Real-Time Building Damage Detection with Ordinal Supervision",
+      "authors": [
+        "Robinson Umeike",
+        "Cuong Pham",
+        "Ryan Hausen",
+        "Thang Dao",
+        "Shane Crawford",
+        "Tanya Brown-Giammanco",
+        "Gerard Lemson",
+        "John van de Lindt",
+        "Blythe Johnston",
+        "Arik Mitschang",
+        "Trung Do"
+      ],
+      "first_submitted": "2026-03-12T05:22:55Z",
+      "updated": "2026-03-12T05:22:55Z",
+      "url": "https://arxiv.org/abs/2603.11557",
+      "review_status": "included",
+      "catalog_id": "tornadonet2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    },
+    {
+      "arxiv": "2601.13396",
+      "title": "A Two-Stage Bayesian Framework for Multi-Fidelity Online Updating of Spatial Fragility Fields",
+      "authors": [
+        "Abdullah M. Braik",
+        "Maria Koliou"
+      ],
+      "first_submitted": "2026-01-19T21:05:00Z",
+      "updated": "2026-01-19T21:05:00Z",
+      "url": "https://arxiv.org/abs/2601.13396",
+      "review_status": "included",
+      "catalog_id": "braik2026",
+      "reason": "Original arXiv source reviewed; scope and task annotated in the catalog."
+    }
+  ],
+  "checked_on": "2026-09-29",
+  "included": 11,
+  "excluded": 8,
+  "known_records_omitted": 5
+}

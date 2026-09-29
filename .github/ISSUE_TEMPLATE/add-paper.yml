@@ -1,0 +1,53 @@
+name: Add a paper / 推荐论文
+description: Bring a tornado-science signal with a primary source.
+title: "[Paper] "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Exact paper title / 论文完整标题
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: DOI or primary source URL
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Research scope
+      options:
+        - Direct tornado research
+        - Severe-storm / operational context
+        - Transferable weather AI (not tornado-validated)
+    validations:
+      required: true
+  - type: textarea
+    id: target
+    attributes:
+      label: Inputs, actual target, and forecast horizon
+      description: Distinguish present detection, future occurrence, reflectivity nowcasting, rating and damage.
+    validations:
+      required: true
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Authors, year, venue, publication status and code
+      description: Explicitly mark anything not yet verified.
+  - type: textarea
+    id: value
+    attributes:
+      label: Why include it? What should readers be careful about?
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Source checks
+      options:
+        - label: I checked the formal catalog for duplicates, including preprint/journal versions.
+          required: true
+        - label: I provided a primary record and did not copy an abstract or upload a copyrighted PDF.
+          required: true

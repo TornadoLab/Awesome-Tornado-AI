@@ -1,0 +1,699 @@
+{
+  "checked_on": "2026-09-29",
+  "before": 67,
+  "after": 155,
+  "added": [
+    {
+      "id": "browning1963",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1963)020<0533:aasoat>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281963%29020%3C0533%3Aaasoat%3E2.0.co%3B2"
+    },
+    {
+      "id": "donaldson1970",
+      "decision": "included",
+      "doi": "10.1175/1520-0450(1970)009<0661:vsrbad>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0450%281970%29009%3C0661%3Avsrbad%3E2.0.co%3B2"
+    },
+    {
+      "id": "fujita1981",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1981)038<1511:taditc>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281981%29038%3C1511%3Ataditc%3E2.0.co%3B2"
+    },
+    {
+      "id": "ward1972",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1972)029<1194:teocfo>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281972%29029%3C1194%3Ateocfo%3E2.0.co%3B2"
+    },
+    {
+      "id": "rotunno1979",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1979)036<0140:asitlv>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281979%29036%3C0140%3Aasitlv%3E2.0.co%3B2"
+    },
+    {
+      "id": "church1979",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1979)036<1755:cotlva>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281979%29036%3C1755%3Acotlva%3E2.0.co%3B2"
+    },
+    {
+      "id": "daviesjones1984",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1984)041<2991:svtoou>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281984%29041%3C2991%3Asvtoou%3E2.0.co%3B2"
+    },
+    {
+      "id": "rotunno1985",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1985)042<0271:otrapo>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281985%29042%3C0271%3Aotrapo%3E2.0.co%3B2"
+    },
+    {
+      "id": "lemon1979",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(1979)107<1184:steams>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%281979%29107%3C1184%3Asteams%3E2.0.co%3B2"
+    },
+    {
+      "id": "markowski2002",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(2002)130<0852:hearfd>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%282002%29130%3C0852%3Ahearfd%3E2.0.co%3B2"
+    },
+    {
+      "id": "markowski2002rfd",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(2002)130<1692:dstowt>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%282002%29130%3C1692%3Adstowt%3E2.0.co%3B2"
+    },
+    {
+      "id": "lee1997a",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1997)054<0032:tnsons>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281997%29054%3C0032%3Atnsons%3E2.0.co%3B2"
+    },
+    {
+      "id": "lee1997b",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1997)054<2387:tnsont>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281997%29054%3C2387%3Atnsont%3E2.0.co%3B2"
+    },
+    {
+      "id": "weisman2003",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(2003)131<2779:lmwsla>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%282003%29131%3C2779%3Almwsla%3E2.0.co%3B2"
+    },
+    {
+      "id": "trapp2005",
+      "decision": "included",
+      "doi": "10.1175/waf-835.1",
+      "source": "https://doi.org/10.1175/waf-835.1"
+    },
+    {
+      "id": "golden1974",
+      "decision": "included",
+      "doi": "10.1175/1520-0450(1974)013<0676:tlcofk>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0450%281974%29013%3C0676%3Atlcofk%3E2.0.co%3B2"
+    },
+    {
+      "id": "renno2001",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(2001)058<0927:astfw>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%282001%29058%3C0927%3Aastfw%3E2.0.co%3B2"
+    },
+    {
+      "id": "wicker1995",
+      "decision": "included",
+      "doi": "10.1175/1520-0469(1995)052<2675:saaotd>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0469%281995%29052%3C2675%3Asaaotd%3E2.0.co%3B2"
+    },
+    {
+      "id": "markowski2014",
+      "decision": "included",
+      "doi": "10.1175/jas-d-13-0159.1",
+      "source": "https://doi.org/10.1175/jas-d-13-0159.1"
+    },
+    {
+      "id": "dahl2014",
+      "decision": "included",
+      "doi": "10.1175/jas-d-13-0123.1",
+      "source": "https://doi.org/10.1175/jas-d-13-0123.1"
+    },
+    {
+      "id": "markowski2016",
+      "decision": "included",
+      "doi": "10.1175/jas-d-16-0150.1",
+      "source": "https://doi.org/10.1175/jas-d-16-0150.1"
+    },
+    {
+      "id": "coffer2017",
+      "decision": "included",
+      "doi": "10.1175/mwr-d-16-0226.1",
+      "source": "https://doi.org/10.1175/mwr-d-16-0226.1"
+    },
+    {
+      "id": "stumpf1998",
+      "decision": "included",
+      "doi": "10.1175/1520-0434(1998)013<0304:tnsslm>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0434%281998%29013%3C0304%3Atnsslm%3E2.0.co%3B2"
+    },
+    {
+      "id": "smith2012",
+      "decision": "included",
+      "doi": "10.1175/waf-d-11-00115.1",
+      "source": "https://doi.org/10.1175/waf-d-11-00115.1"
+    },
+    {
+      "id": "thompson2012",
+      "decision": "included",
+      "doi": "10.1175/waf-d-11-00116.1",
+      "source": "https://doi.org/10.1175/waf-d-11-00116.1"
+    },
+    {
+      "id": "thompson2007",
+      "decision": "included",
+      "doi": "10.1175/waf969.1",
+      "source": "https://doi.org/10.1175/waf969.1"
+    },
+    {
+      "id": "coffer2019",
+      "decision": "included",
+      "doi": "10.1175/waf-d-19-0115.1",
+      "source": "https://doi.org/10.1175/waf-d-19-0115.1"
+    },
+    {
+      "id": "doswell1988",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(1988)116<0495:osious>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%281988%29116%3C0495%3Aosious%3E2.0.co%3B2"
+    },
+    {
+      "id": "doswell2009",
+      "decision": "included",
+      "doi": "10.1016/j.atmosres.2008.11.003",
+      "source": "https://doi.org/10.1016/j.atmosres.2008.11.003"
+    },
+    {
+      "id": "agee2014",
+      "decision": "included",
+      "doi": "10.1175/jamc-d-13-0235.1",
+      "source": "https://doi.org/10.1175/jamc-d-13-0235.1"
+    },
+    {
+      "id": "smith2015",
+      "decision": "included",
+      "doi": "10.1175/waf-d-14-00122.1",
+      "source": "https://doi.org/10.1175/waf-d-14-00122.1"
+    },
+    {
+      "id": "sessa2025",
+      "decision": "included",
+      "doi": "10.1175/aies-d-23-0113.1",
+      "source": "https://doi.org/10.1175/aies-d-23-0113.1"
+    },
+    {
+      "id": "wang2008",
+      "decision": "included",
+      "doi": "10.1175/2007jtecha1022.1",
+      "source": "https://doi.org/10.1175/2007jtecha1022.1"
+    },
+    {
+      "id": "alberts2011",
+      "decision": "included",
+      "doi": "10.1175/2010jtecha1409.1",
+      "source": "https://doi.org/10.1175/2010jtecha1409.1"
+    },
+    {
+      "id": "adrianto2009",
+      "decision": "included",
+      "doi": "10.1080/03081070601068629",
+      "source": "https://doi.org/10.1080/03081070601068629"
+    },
+    {
+      "id": "zeng2022",
+      "decision": "included",
+      "doi": "10.3390/rs14194909",
+      "source": "https://doi.org/10.3390/rs14194909"
+    },
+    {
+      "id": "gensini2021",
+      "decision": "included",
+      "doi": "10.1175/waf-d-21-0056.1",
+      "source": "https://doi.org/10.1175/waf-d-21-0056.1"
+    },
+    {
+      "id": "mcgovern2017",
+      "decision": "included",
+      "doi": "10.1175/bams-d-16-0123.1",
+      "source": "https://doi.org/10.1175/bams-d-16-0123.1"
+    },
+    {
+      "id": "xie2024",
+      "decision": "included",
+      "doi": "10.1029/2024gl108809",
+      "source": "https://doi.org/10.1029/2024gl108809"
+    },
+    {
+      "id": "xie2025ts",
+      "decision": "included",
+      "doi": "10.1016/j.asoc.2025.113834",
+      "source": "https://doi.org/10.1016/j.asoc.2025.113834"
+    },
+    {
+      "id": "xie2026enhanced",
+      "decision": "included",
+      "doi": "10.1016/j.eswa.2026.132803",
+      "source": "https://doi.org/10.1016/j.eswa.2026.132803"
+    },
+    {
+      "id": "jiang2026",
+      "decision": "included",
+      "doi": "10.3390/rs18060948",
+      "source": "https://doi.org/10.3390/rs18060948"
+    },
+    {
+      "id": "snaiki2026",
+      "decision": "included",
+      "doi": "10.1016/j.awe.2026.100101",
+      "source": "https://doi.org/10.1016/j.awe.2026.100101"
+    },
+    {
+      "id": "stensrud2009",
+      "decision": "included",
+      "doi": "10.1175/2009bams2795.1",
+      "source": "https://doi.org/10.1175/2009bams2795.1"
+    },
+    {
+      "id": "gallo2016",
+      "decision": "included",
+      "doi": "10.1175/waf-d-15-0134.1",
+      "source": "https://doi.org/10.1175/waf-d-15-0134.1"
+    },
+    {
+      "id": "gensini2018",
+      "decision": "included",
+      "doi": "10.1038/s41612-018-0048-2",
+      "source": "https://doi.org/10.1038/s41612-018-0048-2"
+    },
+    {
+      "id": "taszarek2015",
+      "decision": "included",
+      "doi": "10.1175/mwr-d-14-00185.1",
+      "source": "https://doi.org/10.1175/mwr-d-14-00185.1"
+    },
+    {
+      "id": "diffenbaugh2013",
+      "decision": "included",
+      "doi": "10.1073/pnas.1307758110",
+      "source": "https://doi.org/10.1073/pnas.1307758110"
+    },
+    {
+      "id": "ashley2007",
+      "decision": "included",
+      "doi": "10.1175/2007waf2007004.1",
+      "source": "https://doi.org/10.1175/2007waf2007004.1"
+    },
+    {
+      "id": "simmons2005",
+      "decision": "included",
+      "doi": "10.1175/waf857.1",
+      "source": "https://doi.org/10.1175/waf857.1"
+    },
+    {
+      "id": "brooks2004",
+      "decision": "included",
+      "doi": "10.1175/bams-85-6-837",
+      "source": "https://doi.org/10.1175/bams-85-6-837"
+    },
+    {
+      "id": "simmons2009",
+      "decision": "included",
+      "doi": "10.1175/2009wcas1005.1",
+      "source": "https://doi.org/10.1175/2009wcas1005.1"
+    },
+    {
+      "id": "bedard2005",
+      "decision": "included",
+      "doi": "10.1175/mwr-2851.1",
+      "source": "https://doi.org/10.1175/mwr-2851.1"
+    },
+    {
+      "id": "elbing2019",
+      "decision": "included",
+      "doi": "10.1121/1.5124486",
+      "source": "https://doi.org/10.1121/1.5124486"
+    },
+    {
+      "id": "schultz2015",
+      "decision": "included",
+      "doi": "10.1175/waf-d-14-00147.1",
+      "source": "https://doi.org/10.1175/waf-d-14-00147.1"
+    },
+    {
+      "id": "bedka2010",
+      "decision": "included",
+      "doi": "10.1175/2009jamc2286.1",
+      "source": "https://doi.org/10.1175/2009jamc2286.1"
+    },
+    {
+      "id": "atkins2012",
+      "decision": "included",
+      "doi": "10.1175/mwr-d-11-00285.1",
+      "source": "https://doi.org/10.1175/mwr-d-11-00285.1"
+    },
+    {
+      "id": "karstens2010",
+      "decision": "included",
+      "doi": "10.1175/2010mwr3201.1",
+      "source": "https://doi.org/10.1175/2010mwr3201.1"
+    },
+    {
+      "id": "wurman2000",
+      "decision": "included",
+      "doi": "10.1175/1520-0493(2000)128<2135:frootd>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0493%282000%29128%3C2135%3Afrootd%3E2.0.co%3B2"
+    },
+    {
+      "id": "molthan2014",
+      "decision": "included",
+      "doi": "10.15191/nwajom.2014.0216",
+      "source": "https://doi.org/10.15191/nwajom.2014.0216"
+    },
+    {
+      "id": "liu2026review",
+      "decision": "included",
+      "doi": "10.3389/feart.2026.1787965",
+      "source": "https://doi.org/10.3389/feart.2026.1787965"
+    },
+    {
+      "id": "honerkamp2020",
+      "decision": "included",
+      "doi": "10.1016/j.jweia.2020.104195",
+      "source": "https://doi.org/10.1016/j.jweia.2020.104195"
+    },
+    {
+      "id": "brooks2019history",
+      "decision": "included",
+      "doi": "10.1175/amsmonographs-d-18-0026.1",
+      "source": "https://doi.org/10.1175/amsmonographs-d-18-0026.1"
+    },
+    {
+      "id": "vortex2012",
+      "decision": "included",
+      "doi": "10.1175/bams-d-11-00010.1",
+      "source": "https://doi.org/10.1175/bams-d-11-00010.1"
+    },
+    {
+      "id": "vortex1994",
+      "decision": "included",
+      "doi": "10.1175/1520-0477(1994)075<0995:votoor>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0477%281994%29075%3C0995%3Avotoor%3E2.0.co%3B2"
+    },
+    {
+      "id": "kong2025",
+      "decision": "included",
+      "doi": "10.1029/2025jd044574",
+      "source": "https://doi.org/10.1029/2025jd044574"
+    },
+    {
+      "id": "li2026kaiyuan",
+      "decision": "included",
+      "doi": "10.1002/qj.70189",
+      "source": "https://doi.org/10.1002/qj.70189"
+    },
+    {
+      "id": "brooks2018",
+      "decision": "included",
+      "doi": "10.1175/waf-d-18-0120.1",
+      "source": "https://doi.org/10.1175/waf-d-18-0120.1"
+    },
+    {
+      "id": "murphy1996",
+      "decision": "included",
+      "doi": "10.1175/1520-0434(1996)011<0003:tfaase>2.0.co;2",
+      "source": "https://doi.org/10.1175/1520-0434%281996%29011%3C0003%3Atfaase%3E2.0.co%3B2"
+    },
+    {
+      "id": "yu2020review",
+      "decision": "included",
+      "doi": "10.11676/qxxb2020.035",
+      "source": "https://qxxb.cmsjournal.net/cn/article/pdf/preview/10.11676/qxxb2020.035.pdf"
+    },
+    {
+      "id": "cai2022",
+      "decision": "included",
+      "doi": "10.11676/qxxb2021.063",
+      "source": "https://qxxb.cmsjournal.net/cn/article/pdf/preview/10.11676/qxxb2021.063.pdf"
+    },
+    {
+      "id": "chen2019funing",
+      "decision": "included",
+      "doi": "10.11676/qxxb2019.025",
+      "source": "https://html.rhhz.net/qxxb_cn/html/2019025.htm"
+    },
+    {
+      "id": "li2019ewiniar",
+      "decision": "included",
+      "doi": "10.16032/j.issn.1004-4965.2019.041",
+      "source": "https://rdqxxb.itmm.org.cn/cn/article/doi/10.16032/j.issn.1004-4965.2019.041"
+    },
+    {
+      "id": "liu2025funing",
+      "decision": "included",
+      "doi": "10.16032/j.issn.1004-4965.2025.066",
+      "source": "https://rdqxxb.itmm.org.cn/article/doi/10.16032/j.issn.1004-4965.2025.066"
+    },
+    {
+      "id": "huang2023",
+      "decision": "included",
+      "doi": "10.12677/ORF.2023.133202",
+      "source": "https://www.hanspub.org/journal/PaperInformation?paperID=67657"
+    },
+    {
+      "id": "lakshmanan2007",
+      "decision": "included",
+      "doi": null,
+      "source": "https://ams.confex.com/ams/87ANNUAL/techprogram/paper_119456.htm"
+    },
+    {
+      "id": "tornadonet2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2603.11557"
+    },
+    {
+      "id": "shakya2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2603.22768"
+    },
+    {
+      "id": "farahkhah2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2608.30633"
+    },
+    {
+      "id": "stout1953",
+      "decision": "included",
+      "doi": "10.1175/1520-0477-34.6.281",
+      "source": "https://doi.org/10.1175/1520-0477-34.6.281"
+    },
+    {
+      "id": "capuli2026climate",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2609.01692"
+    },
+    {
+      "id": "kieu2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2608.00416"
+    },
+    {
+      "id": "robinson2026haste",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2607.11838"
+    },
+    {
+      "id": "capecchi2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2603.24233"
+    },
+    {
+      "id": "braik2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2601.13396"
+    },
+    {
+      "id": "bor2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2605.23053"
+    },
+    {
+      "id": "chen2026xwod",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2605.11521"
+    },
+    {
+      "id": "bradshaw2026",
+      "decision": "included",
+      "doi": null,
+      "source": "https://arxiv.org/abs/2606.22291"
+    }
+  ],
+  "completed_author_lists": [
+    "johnson1998",
+    "mitchell1998",
+    "brooks2014",
+    "xue2016",
+    "cintineo2018",
+    "qing2022",
+    "sandmael2023",
+    "tornet2025",
+    "zeng2025",
+    "tordet2025",
+    "dgmr2021",
+    "nowcastnet2023",
+    "weatherbench22024",
+    "chen2018",
+    "perils2024",
+    "graphcast2023",
+    "aurora2025"
+  ],
+  "updated_publication_records": [
+    "umeike2026",
+    "tordet2025"
+  ],
+  "excluded_search_matches": [
+    {
+      "candidate": "Radar Tracks an Illinois Tornado",
+      "reason": "Not the intended Stout and Huff paper; publisher metadata lacks authors. Replaced with the verified original Radar Records Illinois Tornadogenesis."
+    },
+    {
+      "candidate": "A Hierarchical Bayesian Approach to Seasonal Hurricane Modeling",
+      "reason": "Hurricane search mismatch; not tornado research."
+    },
+    {
+      "candidate": "Probabilistic Active Control of a Seismic Excited Benchmark Building Using Probabilistic Fuzzy Logic Controller",
+      "reason": "Unrelated seismic-control search mismatch."
+    },
+    {
+      "candidate": "A data assimilation method of the Ensemble Kalman Filter for use in severe dust storm forecasts over China",
+      "reason": "Dust storm search mismatch."
+    },
+    {
+      "candidate": "Changes in Ozone Chemical Sensitivity in the United States from 2007 to 2016",
+      "reason": "Ozone search mismatch."
+    },
+    {
+      "candidate": "LlmTornado software and tornado-chart sensitivity analyses",
+      "reason": "Keyword matches, not atmospheric tornado research."
+    }
+  ],
+  "boundary": "Bibliographic and abstract-level source review only. No claim of exhaustive retrieval, full-text audit or independent reproduction.",
+  "search_queries": {
+    "stout1953": "Stout Huff 1953 Radar records Illinois tornado April 9",
+    "fujita1981": "Tornadoes and downbursts in the context of generalized planetary scales",
+    "ward1972": "The exploration of certain features of tornado dynamics using a laboratory model",
+    "rotunno1985": "On the rotation and propagation of simulated supercell thunderstorms",
+    "daviesjones1984": "Streamwise vorticity the origin of updraft rotation in supercell storms",
+    "rotunno1979": "A study in tornado-like vortex dynamics",
+    "church1979": "Characteristics of tornado-like vortices as a function of swirl ratio a laboratory investigation",
+    "markowski2002": "Hook Echoes and Rear-Flank Downdrafts A Review",
+    "markowski2002rfd": "Direct surface thermodynamic observations within the rear-flank downdrafts of nontornadic and tornadic supercells",
+    "markowski2014": "The influence of environmental low-level shear and cold pools on tornadogenesis insights from idealized simulations",
+    "coffer2017": "Simulated Supercells in Nontornadic and Tornadic VORTEX2 Environments",
+    "coffer2019": "Using Near-Ground Storm Relative Helicity in Supercell Tornado Forecasting",
+    "lee1997a": "The Numerical Simulation of Non-Supercell Tornadogenesis Part I Initiation Evolution Pretornadic",
+    "lee1997b": "The Numerical Simulation of Non-Supercell Tornadogenesis Part II Evolution of a Family of Tornadoes",
+    "trapp2005": "Tornadoes from squall lines and bow echoes Part I Climatological distribution",
+    "trapp2003": "Low-Level Mesovortices within Squall Lines and Bow Echoes Part I Overview Dependence Environmental Wind Shear",
+    "golden1974": "The Life Cycle of Florida Keys Waterspouts I",
+    "renno2001": "A Simple Theory for Waterspouts",
+    "lemon1979": "Severe Thunderstorm Evolution and Mesocyclone Structure as Related to Tornadogenesis",
+    "stumpf1998": "The National Severe Storms Laboratory Mesocyclone Detection Algorithm for the WSR-88D",
+    "smith2015": "Diagnosing the Conditional Probability of Tornado Damage Rating Using Environmental and Radar Attributes",
+    "smith2012": "Convective Modes for Significant Severe Thunderstorms in the Contiguous United States Part I Storm Classification and Climatology",
+    "thompson2012": "Convective Modes for Significant Severe Thunderstorms in the Contiguous United States Part II Supercell QLCS Tornado Environments",
+    "thompson2007": "Effective Storm-Relative Helicity and Bulk Shear in Supercell Thunderstorm Environments",
+    "doswell2009": "10.1016/j.atmosres.2008.11.003",
+    "doswell1988": "On Some Issues of United States Tornado Climatology",
+    "widen2013": "A Bayesian Approach to Tornado Climate Modeling",
+    "agee2014": "Adjustments in Tornado Counts F-Scale Intensity and Path Width Assessing Significant Tornado Destruction",
+    "wang2008": "10.1175/2007JTECHA1022.1",
+    "wang2011": "Evaluation of Weather Radar with Pulse Compression Performance of a Fuzzy Logic Tornado Detection Algorithm",
+    "adrianto2009": "10.1080/03081070601068629",
+    "lakshmanan2005": "Creating a Probabilistic Nowcast of Tornado Potential Using Fuzzy Logic",
+    "rf2022": "10.3390/rs14194909",
+    "gifford2021": "10.1175/WAF-D-21-0056.1",
+    "intensity2025": "10.1175/AIES-D-23-0113.1",
+    "mcgovern2017": "10.1175/BAMS-D-16-0123.1",
+    "xie2024": "10.1029/2024GL108809",
+    "tsmti2026": "Enhancing multi-task learning-based Tornado identification using spatial and temporal information from weather radar images",
+    "enhanced2026": "Dual-polarization radar-based enhanced tornado detection network with explainability analysis",
+    "crossdomain2026": "10.3390/rs18060948",
+    "pignn2026": "10.1016/j.awe.2026.100101",
+    "snook2012": "Storm-Scale Ensemble Kalman Filter Data Assimilation Tornadic Supercell Forecasts",
+    "stensrud2009": "Convective-Scale Warn-on-Forecast System A Vision for 2020",
+    "stensrud2013": "Progress and challenges with Warn-on-Forecast",
+    "skin2021": "Forecasting Tornadoes Using Convection-Permitting Ensembles",
+    "potvin2017": "Predicting Supercell Tornado Potential from Radar Observations Using a Probabilistic Data Assimilation Approach",
+    "wicker1995": "Simulation and Analysis of Tornado Development and Decay within a Three-Dimensional Supercell Thunderstorm",
+    "dahl2014": "Imported and Storm-Generated Near-Ground Vertical Vorticity in a Simulated Supercell",
+    "roberts2020": "The Impact of Surface Drag on the Structure and Evolution of Supercell Thunderstorms",
+    "coleman2014": "A Detailed Analysis of the Spatial Distribution of Significant Tornadoes in the United States",
+    "gensini2018": "Spatial trends in United States tornado frequency",
+    "taszarek2017": "Tornado Climatology of Poland",
+    "raupach2021": "The effects of climate change on hailstorms tornadoes and severe convective storms",
+    "diffenbaugh2013": "Robust increases in severe thunderstorm environments in response to greenhouse forcing",
+    "elsey2019": "A Spatially Explicit Model of the Reporting Bias in Tornado Occurrence Data",
+    "ashley2007": "Spatial and Temporal Analysis of Tornado Fatalities in the United States 1880 2005",
+    "simmons2005": "WSR-88D Radar Tornado Warnings and Tornado Casualties",
+    "brooks2017": "Changes in Tornado Warning Performance in the United States from 2007 to 2016",
+    "brooks2004": "Tornado-warning performance in the past and future a perspective from signal detection theory",
+    "sutter2009": "False Alarms Tornado Warnings and Tornado Casualties",
+    "kohl2018": "The Influence of Tornado Warning False Alarms on Protective Action",
+    "kuligowski2020": "Tornado Warning Message Effectiveness",
+    "infrasound2019": "Infrasound Measurements from a Tornado in Oklahoma",
+    "bedard2005": "Low-Frequency Atmospheric Acoustic Energy Associated with Vortices Produced by Thunderstorms",
+    "elbing2019": "Analysis of infrasound from a tornado",
+    "schultz2015": "Insight into the Kinematic and Microphysical Processes that Control Lightning Jumps",
+    "bedka2010": "Objective Satellite-Based Detection of Overshooting Tops Using Infrared Window Channel Brightness Temperature Gradients",
+    "waki2013": "The LaGrange Wyoming Tornado during VORTEX2 Part II Photogrammetric Analysis of the Tornado Combined with Dual-Doppler Radar Data",
+    "wurman1997": "Finescale radar observations of tornadoes",
+    "karstens2010": "Near-Ground Pressure and Wind Measurements in Tornadoes",
+    "molthan2014": "Satellite-Based Identification of Tornado Damage Tracks from the 27 April 2011 Severe Weather Outbreak",
+    "mohammadi2021": "Deep learning for tornado damage assessment",
+    "astra2026": "ASTRA architectural insights for post-tornado damage recognition",
+    "review2026": "10.3389/feart.2026.1787965",
+    "windreview2020": "10.1016/j.jweia.2020.104195",
+    "century2019": "10.1175/AMSMONOGRAPHS-D-18-0026.1",
+    "vortex2014": "The Second Verification of the Origins of Rotation in Tornadoes Experiment VORTEX2",
+    "vortex1994": "Verification of the Origins of Rotation in Tornadoes Experiment VORTEX Design of the Experiment",
+    "cnreview2020": "10.11676/qxxb2020.035",
+    "cnreview2025": "10.11676/qxxb2025.20240106",
+    "cai2022": "10.11676/qxxb2021.063",
+    "chen2019": "10.11676/qxxb2019.025",
+    "liu2025": "10.16032/j.issn.1004-4965.2025.066",
+    "ewiniar2019": "10.16032/j.issn.1004-4965.2019.041",
+    "cnradar2023": "10.12677/ORF.2023.133202",
+    "urban2025": "10.1029/2025JD044574",
+    "kaiyuan2026": "10.1002/qj.70189",
+    "seed_xue2016": "10.1007/s00376-016-6005-2",
+    "seed_cintineo2018": "10.1175/WAF-D-17-0099.1",
+    "seed_qing2022": "10.3390/atmos13040544",
+    "seed_sandmael2023": "10.1175/WAF-D-22-0123.1",
+    "seed_tornet2025": "10.1175/AIES-D-24-0006.1",
+    "seed_tordet2025": "10.1109/TGRS.2025.3647545",
+    "seed_dgmr2021": "10.1038/s41586-021-03854-z",
+    "seed_nowcastnet2023": "10.1038/s41586-023-06184-4",
+    "seed_weatherbench22024": "10.1029/2023MS004019",
+    "seed_chen2018": "10.1002/joc.5369",
+    "seed_perils2024": "10.1175/BAMS-D-22-0064.1",
+    "seed_graphcast2023": "10.1126/science.adi2336",
+    "seed_aurora2025": "10.1038/s41586-025-09005-y",
+    "stout1953verified": "Radar Records Illinois Tornadogenesis",
+    "brooks2018": "10.1175/WAF-D-18-0120.1",
+    "elbing2019journal": "10.1121/1.5124486",
+    "murphy1996": "The Finley Affair A Signal Event in the History of Forecast Verification",
+    "wurman2000": "Finescale Radar Observations of the Dimmitt Texas 2 June 1995 Tornado",
+    "donaldson1970": "Vortex signature recognition by a Doppler radar",
+    "browning1963": "Airflow and Structure of a Tornadic Storm",
+    "seed_johnson1998": "The Storm Cell Identification and Tracking Algorithm: An Enhanced WSR-88D Algorithm",
+    "seed_mitchell1998": "The National Severe Storms Laboratory Tornado Detection Algorithm",
+    "seed_brooks2014": "Increased variability of tornado occurrence in the United States",
+    "seed_zeng2025": "A Novel Tornado Detection Algorithm Based on XGBoost"
+  },
+  "added_count": 88
+}

@@ -1,0 +1,90 @@
+{
+  "checked_on": "2026-09-29",
+  "additional_records": [
+    {
+      "catalog_id": "nolan1999",
+      "title": "The Structure and Dynamics of Tornado-Like Vortices",
+      "source": "https://journals.ametsoc.org/view/journals/atsc/56/16/1520-0469_1999_056_2908_tsadot_2.0.co_2.xml",
+      "decision": "included_annotated",
+      "reason": "Primary publisher/institutional source and abstract checked; original bilingual task annotation supplied."
+    },
+    {
+      "catalog_id": "feng2017china",
+      "title": "中国龙卷时空分布及其环境物理量特征",
+      "source": "https://rdqxxb.itmm.org.cn/cn/article/doi/10.16032/j.issn.1004-4965.2017.04.010",
+      "decision": "included_annotated",
+      "reason": "Primary publisher/institutional source and abstract checked; original bilingual task annotation supplied."
+    },
+    {
+      "catalog_id": "yao2018simulation",
+      "title": "龙卷数值模拟研究进展",
+      "source": "https://cmalibrary.cn/amst/2018/201802/yjlw/yjjz/201806/t20180606_104880.htm",
+      "decision": "included_annotated",
+      "reason": "Primary publisher/institutional source and abstract checked; original bilingual task annotation supplied."
+    },
+    {
+      "catalog_id": "cai2026china",
+      "title": "2025年中国龙卷活动及灾情特征",
+      "source": "https://qxkz.cbpt.cnki.net/portal/journal/portal/client/paper/956e32bdc857af8ba60c44ac0c041d5b",
+      "decision": "included_annotated",
+      "reason": "Primary publisher/institutional source and abstract checked; original bilingual task annotation supplied."
+    },
+    {
+      "catalog_id": "ma2026henan",
+      "title": "豫东北三次龙卷环流背景、环境条件和雷达特征分析",
+      "source": "https://www.sdkx.net/CN/10.3976/j.issn.1002-4026.2025131",
+      "decision": "included_annotated",
+      "reason": "Primary publisher/institutional source and abstract checked; original bilingual task annotation supplied."
+    }
+  ],
+  "promoted_to_annotated": [
+    "ref-a8a4c438852a",
+    "ref-8512f9cf0422",
+    "ref-85ea1b95b91a"
+  ],
+  "code_links": [
+    {
+      "catalog_id": "umeike2026",
+      "code_url": "https://github.com/crumeike/ASTRA",
+      "source": "https://crumeike.github.io/astra-page/",
+      "evidence": "Author project page links the ASTRA repository."
+    },
+    {
+      "catalog_id": "hrrrcast2026",
+      "code_url": "https://github.com/NOAA-GSL/HRRRCast-live",
+      "source": "https://github.com/NOAA-GSL/HRRRCast-live",
+      "evidence": "NOAA repository README cites arXiv:2507.05658 and documents the live inference pipeline."
+    },
+    {
+      "catalog_id": "ref-85ea1b95b91a",
+      "code_url": "https://github.com/Tornado-AI/TorViNet",
+      "source": "https://www.sciencedirect.com/science/article/abs/pii/S0957417426000072",
+      "evidence": "Publisher code-availability section identifies this repository."
+    },
+    {
+      "catalog_id": "shakya2026",
+      "code_url": "https://github.com/Mamunahmed33/From-Pixels-to-Semantic",
+      "source": "https://openaccess.thecvf.com/content/CVPR2026W/AI4RWC/html/Shakya_From_Pixels_to_Semantics_A_Multi-Stage_AI_Framework_for_Structural_CVPRW_2026_paper.html",
+      "evidence": "CVF paper page explicitly supplies the code link."
+    },
+    {
+      "catalog_id": "dgmr2021",
+      "code_url": "https://github.com/deepmind/deepmind-research/tree/master/nowcasting",
+      "source": "https://www.nature.com/articles/s41586-021-03854-z",
+      "evidence": "Nature code-availability section links pretrained models and the nowcasting directory."
+    },
+    {
+      "catalog_id": "nowcastnet2023",
+      "code_url": "https://doi.org/10.24433/CO.0832447.v1",
+      "source": "https://www.nature.com/articles/s41586-023-06184-4",
+      "evidence": "Nature code-availability section links the authors' Code Ocean capsule; this is not a GitHub repository."
+    }
+  ],
+  "publication_update": {
+    "catalog_id": "shakya2026",
+    "status": "conference",
+    "venue": "CVPR 2026 Workshops (AI4RWC)",
+    "source": "https://openaccess.thecvf.com/content/CVPR2026W/AI4RWC/html/Shakya_From_Pixels_to_Semantics_A_Multi-Stage_AI_Framework_for_Structural_CVPRW_2026_paper.html"
+  },
+  "boundary": "Abstract/metadata annotations and source-linked repository discovery. No independent full-text methodology audit or experiment reproduction."
+}

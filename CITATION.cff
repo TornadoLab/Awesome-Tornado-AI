@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite the original papers for scientific claims. Cite this collection when reusing its curation or annotations. This is a seed catalog, not an independently reproduced benchmark."
+type: dataset
+title: "Awesome Tornado AI: A Source-Linked Tornado Research Atlas"
+authors:
+  - name: "TornadoLab contributors"
+version: "0.2.0"
+repository-code: "https://github.com/TornadoLab/Awesome-Tornado-AI"
+license: CC-BY-4.0
+keywords:
+  - tornado
+  - weather radar
+  - severe weather
+  - machine learning
+  - bibliography
+abstract: "A curated seed collection spanning tornado physics, radar signatures, detection, damage-based rating, prediction, operational context and transferable weather AI."

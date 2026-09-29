@@ -1,0 +1,32 @@
+{
+  "records": 930,
+  "categories": 15,
+  "by_scope": {
+    "context": 36,
+    "direct": 884,
+    "transfer": 10
+  },
+  "by_category": {
+    "agents": 5,
+    "climatology": 116,
+    "data": 10,
+    "dl": 16,
+    "engineering": 104,
+    "evaluation": 64,
+    "forecast": 54,
+    "foundations": 252,
+    "impacts": 59,
+    "ml": 19,
+    "radar": 58,
+    "rating": 46,
+    "sensing": 24,
+    "social": 98,
+    "transfer": 5
+  },
+  "by_record_type": {
+    "annotated": 163,
+    "bibliographic": 767
+  },
+  "code_links": 20,
+  "snapshot": "2026-09-29"
+}

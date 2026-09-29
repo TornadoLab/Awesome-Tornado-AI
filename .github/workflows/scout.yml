@@ -1,0 +1,26 @@
+name: Scout new arXiv candidates (manual)
+on:
+  workflow_dispatch:
+  # Opt-in only. Uncomment after deciding on a review cadence:
+  # schedule:
+  #   - cron: '0 9 * * 1'
+permissions:
+  contents: read
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Retrieve candidates, without modifying the formal catalog
+        run: python tools/discover_arxiv.py --max-results 100
+      - uses: actions/upload-artifact@v7
+        with:
+          name: tornado-paper-candidates
+          path: review/candidates.json
+          if-no-files-found: error
+          retention-days: 30

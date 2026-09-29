@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08151b">
+  <meta name="description" content="TornadoLab's living literature atlas: tornado physics, radar detection, intensity, prediction, deep learning and reasoning agents. Searchable, source-linked, open research.">
+  <title>Awesome Tornado AI · TornadoLab Research Observatory</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#collection">Skip to the paper collection</a>
+<div class="shell">
+<header class="topbar">
+  <a class="brand" href="#" aria-label="TornadoLab home"><svg viewBox="0 0 36 36" aria-hidden="true"><ellipse cx="18" cy="9" rx="13" ry="4"/><path d="M7 16q11 8 22 0M11 24q7 5 14 0M15 31h6"/></svg><span>TORNADO<span class="dim">LAB</span></span></a>
+  <nav aria-label="Main navigation"><a href="#collection">The atlas</a><a href="#routes">Reading routes</a><a href="https://github.com/TornadoLab/Awesome-Tornado-AI" target="_blank" rel="noopener noreferrer">GitHub ↗</a></nav>
+  <span class="edition">OPEN RESEARCH / 002</span>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="signal-square"></span> AWESOME TORNADO AI</div>
+    <h1 id="hero-title">Inside the<br>vortex.<br><em>Beyond the<br>black box.</em></h1>
+    <p class="hero-text">A living atlas of tornado research. From the first Doppler echo to deep learning and reasoning agents.</p>
+    <p class="hero-zh" lang="zh-CN">追踪风暴，也追踪科学如何理解风暴。</p>
+    <div class="hero-actions"><a class="button primary" href="#collection">Explore the collection <span aria-hidden="true">↘</span></a><button class="button ghost" id="random-hero">Chase a paper <span aria-hidden="true">⤨</span></button></div>
+  </div>
+  <div class="hero-visual">
+    <div class="visual-caption"><span>THE RESEARCH OBSERVATORY</span><span>01 / VORTEX</span></div>
+    <div class="storm-frame">{{STORM_SVG}}<div class="radar-sweep" aria-hidden="true"></div></div>
+    <div class="motion-controls"><button id="motion-toggle" class="text-button" aria-pressed="false" hidden>Pause animation</button></div>
+    <div class="visual-bottom"><span class="crosshair" aria-hidden="true">⊕</span><div>OBSERVE → UNDERSTAND → ANTICIPATE<small>Not a warning service. A source-linked research collection.</small></div></div>
+  </div>
+</section>
+<section class="stats" aria-label="Collection statistics">
+  <div><strong id="stat-count">—</strong><span>INDEXED RECORDS</span></div><div><strong id="stat-categories">—</strong><span>RESEARCH DIRECTIONS</span></div><div><strong id="stat-years">—</strong><span>FOUNDATIONS → FRONTIER</span></div><div class="snapshot"><span class="eyebrow">CATALOG SNAPSHOT</span><strong id="stat-date">—</strong><span>GROWING ATLAS · NOT EXHAUSTIVE</span></div>
+</section>
+<section id="routes" class="routes-section" aria-labelledby="routes-title">
+  <div class="section-title"><div><div class="eyebrow muted">CHOOSE YOUR ENTRY POINT</div><h2 id="routes-title">Every storm has a starting point.</h2></div><span class="section-number" aria-hidden="true">01—03</span></div>
+  <div id="route-cards" class="route-grid"></div>
+</section>
+<section id="collection" class="collection-section" aria-labelledby="collection-title">
+  <p id="curation-counts" class="section-note"></p>
+  <div class="section-title atlas-title"><div><div class="eyebrow muted">THE LITERATURE ATLAS</div><h2 id="collection-title">Find your next signal.</h2><p class="section-note">Physics first. Evidence always. English &amp; 中文 searchable.</p></div><button id="saved-toggle" class="button ghost" aria-pressed="false">Reading list <span id="saved-count">0</span></button></div>
+  <div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">Search the paper collection</label><input id="search" type="search" autocomplete="off" placeholder="Search tornadogenesis, 雷达, an author, or a method…"><kbd aria-hidden="true">/</kbd></div>
+  <div class="atlas-layout">
+    <aside class="sidebar" aria-label="Research directions"><h3>RESEARCH DIRECTIONS</h3><div id="category-list"></div><div class="scope-legend"><h3>READ THE SCOPE</h3><p><b class="dot direct"></b><strong>Direct</strong><br>Tornado-specific research.</p><p><b class="dot context"></b><strong>Context</strong><br>Severe-storm science &amp; operations.</p><p><b class="dot transfer"></b><strong>Transfer</strong><br>Weather AI; not tornado validation.</p></div></aside>
+    <div class="results-column">
+      <div class="filters">
+        <label>Scope<select id="scope"><option value="">All scopes</option><option value="direct">Direct tornado research</option><option value="context">Storm / operational context</option><option value="transfer">Transferable weather AI</option></select></label>
+        <label>Year<select id="year"><option value="">All years</option></select></label>
+        <label>Publication<select id="status"><option value="">All statuses</option><option value="journal">Journal</option><option value="conference">Conference</option><option value="preprint">Preprint</option><option value="report">Report</option><option value="chapter">Chapter</option></select></label>
+        <label>Entry detail<select id="curation"><option value="">All entries</option><option value="annotated">With annotations</option><option value="bibliographic">Bibliographic records</option></select></label>
+        <label>Order<select id="sort"><option value="newest">Year: newest</option><option value="oldest">Year: oldest</option><option value="title">Title: A–Z</option></select></label>
+      </div>
+      <div class="result-summary"><span id="result-count" role="status" aria-live="polite"></span><label class="check"><input type="checkbox" id="code-only"> With code</label><button id="clear-filters" class="text-button">Reset</button><button id="export-bib" class="text-button">Export BibTeX ↓</button></div>
+      <div id="active-route" class="active-route" hidden></div>
+      <div id="papers" class="paper-grid"></div>
+      <div class="load-row"><button class="button ghost" id="load-more">More signals ↓</button></div>
+      <div class="evidence-note"><span aria-hidden="true">ⓘ</span><p><strong>Read the entry detail.</strong> Annotated papers describe methods, inputs and targets. Bibliographic records provide source metadata and topic indexing while detailed reading is pending. Every entry links to its primary source. No experiments have been independently reproduced.</p></div>
+    </div>
+  </div>
+</section>
+<section class="contribute-section"><div><div class="eyebrow">THE NEXT SIGNAL COULD BE YOURS</div><h2>Keep the atlas growing.</h2><p>Found a missing classic, a new method or an incorrect citation?<br>Bring the paper. Bring the primary source. Leave the hype behind.</p></div><a class="button primary" href="https://github.com/TornadoLab/Awesome-Tornado-AI/issues/new/choose" target="_blank" rel="noopener noreferrer">Contribute a signal ↗</a></section>
+</main>
+<footer><div class="footer-brand">TORNADOLAB <span>/ AWESOME TORNADO AI</span></div><p>Original annotations · Source-linked scholarship · No trackers</p><p class="footer-warning">For research discovery, not operational warning or emergency decisions. Local reading-list preferences stay in this browser.</p></footer>
+</div>
+<dialog id="paper-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">PAPER FIELD NOTES</span><button id="close-dialog" class="icon-button" aria-label="Close paper details">×</button></div><div id="dialog-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript><div class="no-script">JavaScript is required for filtering. Read the Markdown paper catalog in the repository instead.</div></noscript>
+<script src="catalog.js"></script>
+<script src="motion.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

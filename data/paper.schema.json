@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TornadoLab paper record",
+  "description": "Structural field reference. tools/validate.py additionally checks duplicates, dates, routes and consistency.",
+  "type": "object",
+  "required": [
+    "arxiv",
+    "authors",
+    "authors_complete",
+    "category",
+    "caveat",
+    "code_url",
+    "doi",
+    "id",
+    "inputs",
+    "method",
+    "preprint_year",
+    "publication_status",
+    "record_type",
+    "region",
+    "scope",
+    "sources",
+    "summary",
+    "summary_zh",
+    "target_and_horizon",
+    "title",
+    "url",
+    "venue",
+    "verification",
+    "year"
+  ],
+  "properties": {
+    "arxiv": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authors_complete": {
+      "type": "boolean"
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "inputs": {
+      "type": "string"
+    },
+    "summary_zh": {
+      "type": "string"
+    },
+    "target_and_horizon": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer",
+      "minimum": 1800
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "level",
+        "checked_on",
+        "reproduced"
+      ],
+      "properties": {
+        "level": {
+          "enum": [
+            "metadata",
+            "full_text",
+            "reproduced"
+          ]
+        },
+        "checked_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "reproduced": {
+          "type": "boolean"
+        }
+      }
+    },
+    "preprint_year": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://"
+      }
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "scope": {
+      "enum": [
+        "direct",
+        "context",
+        "transfer"
+      ]
+    },
+    "venue": {
+      "type": "string"
+    },
+    "publication_status": {
+      "enum": [
+        "journal",
+        "conference",
+        "preprint",
+        "report",
+        "chapter"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "caveat": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "code_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_type": {
+      "enum": [
+        "annotated",
+        "bibliographic"
+      ]
+    }
+  }
+}

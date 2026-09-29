@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+  <opensearch:totalResults>2</opensearch:totalResults>
+  <entry><id>http://arxiv.org/abs/2510.03349v1</id><title>AgentCaster: Reasoning-Guided Tornado Forecasting</title><published>2025-10-03T00:00:00Z</published><updated>2025-10-03T00:00:00Z</updated><author><name>Michael Chen</name></author></entry>
+  <entry><id>http://arxiv.org/abs/0000.00000v2</id><title>SYNTHETIC TEST FIXTURE — Not a real paper</title><published>2026-09-01T00:00:00Z</published><updated>2026-09-02T00:00:00Z</updated><author><name>Fixture Author</name></author></entry>
+</feed>

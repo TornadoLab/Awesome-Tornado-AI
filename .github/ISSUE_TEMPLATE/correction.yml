@@ -1,0 +1,22 @@
+name: Correction / 更正
+description: Fix metadata, task interpretation, missing corrections or source links.
+title: "[Correction] "
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record ID or title
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What is incorrect, and what should it say?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary evidence, correction or retraction URL
+    validations:
+      required: true

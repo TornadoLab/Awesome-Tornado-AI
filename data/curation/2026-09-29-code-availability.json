@@ -1,0 +1,209 @@
+{
+  "checked_on": "2026-09-29",
+  "method": "Public GitHub repository API lookup; DOI resolution for Code Ocean. Relationship evidence remains in each paper and the source-followup audit. No code was executed.",
+  "results": [
+    {
+      "id": "weatherqa2024",
+      "code_url": "https://github.com/chengqianma/WeatherQA",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/chengqianma/WeatherQA",
+      "repository": "chengqianma/WeatherQA",
+      "description": null,
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "tornet2025",
+      "code_url": "https://github.com/mit-ll/tornet",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/mit-ll/tornet",
+      "repository": "mit-ll/tornet",
+      "description": "Software to work with the TorNet dataset",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "tordet2025",
+      "code_url": "https://github.com/Tornado-AI/TorDet",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/Tornado-AI/TorDet",
+      "repository": "Tornado-AI/TorDet",
+      "description": "TorDet: A Refined Two-Stage Deep Learning Approach for Radar-Based Tornado Detection",
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "wofscast2025",
+      "code_url": "https://github.com/NOAA-National-Severe-Storms-Laboratory/frdd-wofs-cast",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/NOAA-National-Severe-Storms-Laboratory/frdd-wofs-cast",
+      "repository": "NOAA-National-Severe-Storms-Laboratory/frdd-wofs-cast",
+      "description": "Refactored GraphCast for WoFS",
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "agentcaster2025",
+      "code_url": "https://github.com/agentcaster/agentcaster",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/agentcaster/agentcaster",
+      "repository": "agentcaster/agentcaster",
+      "description": null,
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "radarqa2025",
+      "code_url": "https://github.com/hexmSeeU/RadarQA",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/hexmSeeU/RadarQA",
+      "repository": "hexmSeeU/RadarQA",
+      "description": "The official repository of RadarQA",
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "umeike2026",
+      "code_url": "https://github.com/crumeike/ASTRA",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/crumeike/ASTRA",
+      "repository": "crumeike/ASTRA",
+      "description": "Official repository for the paper \"ASTRA: Architectural inSights for post-ToRnado damAge recognition,\" published in Expert Systems with Applications (Elsevier), 2026.",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "weatherr12026",
+      "code_url": "https://github.com/Marcowky/Weather-R1",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/Marcowky/Weather-R1",
+      "repository": "Marcowky/Weather-R1",
+      "description": "[ICASSP 2026] Weather-R1: Logically Consistent Reinforcement Fine-Tuning for Multimodal Reasoning in Meteorology",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "dgmr2021",
+      "code_url": "https://github.com/deepmind/deepmind-research/tree/master/nowcasting",
+      "status": 200,
+      "checked_url": "https://api.github.com/repositories/165826654",
+      "repository": "google-deepmind/deepmind-research",
+      "description": "This repository contains implementations and illustrative code to accompany DeepMind publications",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "nowcastnet2023",
+      "code_url": "https://doi.org/10.24433/CO.0832447.v1",
+      "status": 403,
+      "checked_url": "https://codeocean.com/capsule/3935105/tree/v1"
+    },
+    {
+      "id": "climax2023",
+      "code_url": "https://github.com/microsoft/ClimaX",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/microsoft/ClimaX",
+      "repository": "microsoft/ClimaX",
+      "description": "Foundation model for weather & climate",
+      "homepage": "https://microsoft.github.io/ClimaX/",
+      "fork": false
+    },
+    {
+      "id": "weatherbench2020",
+      "code_url": "https://github.com/pangeo-data/WeatherBench",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/pangeo-data/WeatherBench",
+      "repository": "pangeo-data/WeatherBench",
+      "description": "A benchmark dataset for data-driven weather forecasting",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "weatherbench22024",
+      "code_url": "https://github.com/google-research/weatherbench2",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/google-research/weatherbench2",
+      "repository": "google-research/weatherbench2",
+      "description": "A benchmark for the next generation of data-driven global weather models.",
+      "homepage": "https://weatherbench2.readthedocs.io",
+      "fork": false
+    },
+    {
+      "id": "graphcast2023",
+      "code_url": "https://github.com/google-deepmind/graphcast",
+      "status": 200,
+      "checked_url": "https://api.github.com/repositories/666376652",
+      "repository": "google-deepmind/weathernext",
+      "description": null,
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "aurora2025",
+      "code_url": "https://github.com/microsoft/aurora",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/microsoft/aurora",
+      "repository": "microsoft/aurora",
+      "description": "Implementation of the Aurora model for Earth system forecasting",
+      "homepage": "https://microsoft.github.io/aurora",
+      "fork": false
+    },
+    {
+      "id": "hrrrcast2026",
+      "code_url": "https://github.com/NOAA-GSL/HRRRCast-live",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/NOAA-GSL/HRRRCast-live",
+      "repository": "NOAA-GSL/HRRRCast-live",
+      "description": null,
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "tornadonet2026",
+      "code_url": "https://github.com/crumeike/TornadoNet",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/crumeike/TornadoNet",
+      "repository": "crumeike/TornadoNet",
+      "description": "A comprehensive PyTorch-based framework for evaluating and optimizing deep learning models for post-tornado damage recognition based on ordinal supervision.",
+      "homepage": "",
+      "fork": false
+    },
+    {
+      "id": "shakya2026",
+      "code_url": "https://github.com/Mamunahmed33/From-Pixels-to-Semantic",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/Mamunahmed33/From-Pixels-to-Semantic",
+      "repository": "Mamunahmed33/From-Pixels-to-Semantic",
+      "description": "From Pixels to Semantics: A Multi-Stage AI Framework for Structural Damage Detection in Satellite Imagery",
+      "homepage": null,
+      "fork": false
+    },
+    {
+      "id": "robinson2026haste",
+      "code_url": "https://github.com/microsoft/haste",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/microsoft/haste",
+      "repository": "microsoft/haste",
+      "description": "High Speed Assessment and Satellite Tracking for Emergencies",
+      "homepage": "https://microsoft.github.io/haste/",
+      "fork": false
+    },
+    {
+      "id": "ref-85ea1b95b91a",
+      "code_url": "https://github.com/Tornado-AI/TorViNet",
+      "status": 200,
+      "checked_url": "https://api.github.com/repos/Tornado-AI/TorViNet",
+      "repository": "Tornado-AI/TorViNet",
+      "description": "TorTorViNet: A Spatiotemporal Deep Learning Network for Tornado Detection in User-Captured Social Media Videos",
+      "homepage": null,
+      "fork": false
+    }
+  ],
+  "publication_followup": {
+    "catalog_id": "weatherr12026",
+    "publication_status": "conference",
+    "venue": "ICASSP 2026",
+    "source": "https://www.cmsworkshops.com/ICASSP2026/view_paper.php?PaperNum=9095&bare=1",
+    "doi": null
+  }
+}

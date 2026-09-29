@@ -1,0 +1,58 @@
+[
+  {
+    "id": "scout",
+    "name": "First contact",
+    "name_zh": "从零进入龙卷研究",
+    "level": "SCOUT / 01",
+    "description": "Start with the physics. Learn what the sensors see, and what the labels mean.",
+    "description_zh": "先理解物理、雷达信号与标签，再看模型。",
+    "papers": [
+      "stout1953",
+      "lemon1979",
+      "daviesjones2015",
+      "brown1978",
+      "ryzhkov2005",
+      "fujita1971",
+      "edwards2013",
+      "tornet2025"
+    ]
+  },
+  {
+    "id": "chaser",
+    "name": "Build your first baseline",
+    "name_zh": "从传统算法到可复现基线",
+    "level": "STORM CHASER / 02",
+    "description": "Follow the path from signature algorithms to neural detection and probabilistic guidance.",
+    "description_zh": "从特征算法走到神经检测与概率预报，逐项核对输入和时间窗。",
+    "papers": [
+      "mitchell1998",
+      "marzban1996",
+      "wang2008",
+      "adrianto2009",
+      "lagerquist2020",
+      "sandmael2023",
+      "tornet2025",
+      "jiang2026",
+      "brooks2018"
+    ]
+  },
+  {
+    "id": "frontier",
+    "name": "Read the frontier carefully",
+    "name_zh": "走向多模态与智能体",
+    "level": "RESEARCHER / 03",
+    "description": "Explore reasoning, regional emulators and new benchmarks—without confusing their tasks.",
+    "description_zh": "探索推理、区域天气模拟与新基准，不把任务差异包装成性能进步。",
+    "papers": [
+      "weatherqa2024",
+      "agentcaster2025",
+      "darknet2026",
+      "flora2026",
+      "erickson2026",
+      "radarqa2025",
+      "umeike2026",
+      "tornadonet2026",
+      "shakya2026"
+    ]
+  }
+]

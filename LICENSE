@@ -1,0 +1,16 @@
+Awesome Tornado AI — license scopes
+
+Original software, website code, templates used as software, tests and vector
+artwork: MIT License; see licenses/MIT.txt.
+
+Original editorial prose and paper annotations (including the English/Chinese
+annotation fields in data/papers.json): Creative Commons Attribution 4.0
+International (CC BY 4.0); see licenses/CONTENT.md.
+
+Bibliographic facts do not transfer copyright in the works they identify.
+Paper texts, abstracts, publisher figures, datasets, external software and
+third-party names or trademarks remain subject to their original rights and
+licenses. They are linked, not relicensed or bundled, by this repository.
+
+No affiliation with or endorsement by upstream authors or institutions is
+implied. This is a research collection, not an operational warning service.
