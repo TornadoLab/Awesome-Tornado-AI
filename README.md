@@ -21,7 +21,7 @@ python -m http.server 8000 --directory docs
 
 The site is published on **GitHub Pages**, with HTTPS enforced, from the `main` branch's `docs/` directory. See [setup and publishing](SETUP.zh-CN.md). The decorative vortex is original vector artwork, not a measured radar field.
 
-The vortex now rotates, sways and carries drifting particles. The site has a pause control, honors reduced-motion preferences, and pauses artwork when offscreen. The SVG banner also contains animation; hosts that suppress SVG motion show its static fallback.
+The vortex rotates, sways and carries drifting particles. The site has a pause/play control and pauses artwork when offscreen. Reduced-motion visitors start with paused artwork and can choose **Play tornado**. The SVG banner also contains animation; hosts that suppress SVG motion show its static fallback.
 
 **September expansion:** 863 additions beyond the original 67-record set. A 36-query Crossref pass (33 successful responses), individual publisher searches and a live 2026 arXiv sweep are documented in the [collection log](guides/COLLECTION_LOG.md), including exclusions, pending candidates and version merges. Bibliography-only entries have explicit pending-method fields; they are not presented as fully read papers.
 

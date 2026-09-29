@@ -23,7 +23,7 @@ python -m http.server 8000 --directory docs
 
 网站已通过 **GitHub Pages 上线**，启用 HTTPS，并从 `main` 分支的 `docs/` 目录发布。更新和本地预览步骤见 [SETUP.zh-CN.md](SETUP.zh-CN.md)。
 
-龙卷图加入了旋转流线、漏斗摆动和尘粒动画，支持暂停、系统“减少动态效果”设置及离屏暂停。README 的 SVG 横幅也包含动画；不支持 SVG 动画的阅读器仍能显示静态图。
+龙卷图包含旋转流线、漏斗摆动和尘粒动画，支持播放、暂停及离屏暂停。系统开启“减少动态效果”时默认暂停，仍可点击 **Play tornado** 主动播放。README 的 SVG 横幅也包含动画；不支持 SVG 动画的阅读器仍能显示静态图。
 
 **相对最初的 67 条，本轮增加 {{ADDED_COUNT}} 条。** 已完成 36 组 Crossref 检索中的 33 组、期刊与机构原始页面检索，以及一次 2026 年 arXiv 实时检索。方法注释与书目索引分别标记；检索上限、排除项、待核验候选和版本合并见 [搜集记录](guides/COLLECTION_LOG.md)。
 

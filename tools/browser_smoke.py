@@ -5,6 +5,7 @@ Counts and route expectations follow the canonical catalog.
 """
 from __future__ import annotations
 import argparse
+import base64
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 import json
@@ -19,6 +20,30 @@ from standalone import render
 class QuietHandler(SimpleHTTPRequestHandler):
     def log_message(self, *_):
         pass
+
+
+def changed_pixels(page, before: bytes, after: bytes) -> float:
+    """Compare rendered PNG pixels, without needing an image-library dependency."""
+    frames = ['data:image/png;base64,' + base64.b64encode(b).decode('ascii')
+              for b in (before, after)]
+    return page.evaluate('''async frames => {
+      const images = await Promise.all(frames.map(src => new Promise((resolve, reject) => {
+        const image = new Image();
+        image.onload = () => resolve(image); image.onerror = reject; image.src = src;
+      })));
+      const canvas = document.createElement('canvas');
+      canvas.width = images[0].width; canvas.height = images[0].height;
+      const ctx = canvas.getContext('2d', {willReadFrequently:true});
+      const pixels = images.map(image => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height); ctx.drawImage(image, 0, 0);
+        return ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+      });
+      let changed = 0;
+      for (let i = 0; i < pixels[0].length; i += 4) {
+        if ([0,1,2].some(c => Math.abs(pixels[0][i+c] - pixels[1][i+c]) > 12)) changed++;
+      }
+      return changed / (canvas.width * canvas.height);
+    }''', frames)
 
 
 def main() -> None:
@@ -68,31 +93,40 @@ def main() -> None:
             record('Desktop: no horizontal overflow')
             page.screenshot(path=str(args.output/'desktop.png'))
 
-            # Measure animation state over time, beyond checking CSS class names.
+            # Compare actual artwork pixels with the radar hidden: changing CSS values
+            # or a moving radar alone must not pass a test for a moving tornado.
             flow = page.locator('.vortex-flow').first
+            frame = page.locator('.storm-frame')
+            page.locator('.radar-sweep').evaluate("e=>e.style.visibility='hidden'")
             offset = flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
-            page.locator('.storm-frame').screenshot(path=str(args.output/'motion-0.png'))
-            page.wait_for_timeout(350)
+            before = frame.screenshot(path=str(args.output/'motion-0.png'), animations='allow')
+            page.wait_for_timeout(600)
             assert flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset') != offset
-            page.locator('.storm-frame').screenshot(path=str(args.output/'motion-1.png'))
-            record('Tornado flow advances between animation frames')
+            after = frame.screenshot(path=str(args.output/'motion-1.png'), animations='allow')
+            assert changed_pixels(page, before, after) > .005
+            record('Tornado visibly changes rendered pixels with the radar hidden')
             page.locator('#motion-toggle').click()
             assert page.locator('#motion-toggle').get_attribute('aria-pressed') == 'true'
             page.wait_for_timeout(80)
             offset = flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
+            before = frame.screenshot(animations='allow')
             page.wait_for_timeout(250)
             assert flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset') == offset
+            assert changed_pixels(page, before, frame.screenshot(animations='allow')) == 0
             record('Pause control freezes tornado flow')
             page.locator('#motion-toggle').click()
             page.wait_for_timeout(150)
             assert flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset') != offset
             record('Play control resumes tornado flow')
+            page.locator('.radar-sweep').evaluate("e=>e.style.removeProperty('visibility')")
             page.evaluate('scrollTo(0,document.body.scrollHeight)')
             page.wait_for_function("document.querySelector('.hero-visual').classList.contains('motion-paused')")
             page.evaluate('scrollTo(0,0)')
             page.wait_for_function("!document.querySelector('.hero-visual').classList.contains('motion-paused')")
             record('Artwork pauses outside viewport and resumes on return')
 
+            page.locator('#collection').evaluate("e=>e.scrollIntoView({block:'start',behavior:'instant'})")
+            page.screenshot(path=str(args.output/'desktop-collection.png'))
             page.locator('#search').fill('AgentCaster')
             assert page.locator('.paper-card').count() == 1
             record('English search')
@@ -100,6 +134,7 @@ def main() -> None:
             assert page.locator('#paper-dialog').is_visible()
             assert '12' in page.locator('#dialog-body').inner_text()
             assert page.locator('.source-list a').count() > 0
+            page.screenshot(path=str(args.output/'desktop-dialog.png'))
             record('Paper dialog includes horizon and primary provenance')
             page.keyboard.press('Escape')
             assert not page.locator('#paper-dialog').is_visible()
@@ -196,19 +231,49 @@ def main() -> None:
             page.keyboard.press('/')
             assert page.locator('#search').evaluate('(e)=>e===document.activeElement')
             record('Search keyboard shortcut')
+            page.evaluate("scrollTo({top:0,behavior:'instant'})")
             page.emulate_media(reduced_motion='reduce')
             # Chromium dispatches MediaQueryList.change asynchronously after CSS updates.
-            page.wait_for_function("document.getElementById('motion-toggle').disabled")
-            assert flow.evaluate('(e)=>getComputedStyle(e).animationName') == 'none'
-            assert page.locator('.radar-sweep').evaluate('(e)=>getComputedStyle(e).animationName') == 'none'
-            assert page.locator('#motion-toggle').is_disabled()
-            record('Reduced motion stops vortex and sweep')
+            page.wait_for_function("document.getElementById('motion-toggle').getAttribute('aria-pressed') === 'true'")
+            assert flow.evaluate('(e)=>getComputedStyle(e).animationPlayState') == 'paused'
+            assert page.locator('.radar-sweep').evaluate('(e)=>getComputedStyle(e).animationPlayState') == 'paused'
+            assert page.locator('#motion-toggle').is_enabled()
+            record('Reduced motion pauses vortex and sweep with Play still available')
+            page.locator('#motion-toggle').click()
+            offset = flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
+            page.wait_for_timeout(350)
+            assert flow.evaluate('(e)=>getComputedStyle(e).strokeDashoffset') != offset
+            assert page.locator('.radar-sweep').evaluate('(e)=>getComputedStyle(e).animationPlayState') == 'running'
+            record('Explicit Play overrides reduced-motion default for both animations')
+            page.locator('#motion-toggle').click()
+            page.evaluate("scrollTo({top:document.body.scrollHeight,behavior:'instant'})")
+            page.wait_for_timeout(100)
+            page.evaluate("scrollTo({top:0,behavior:'instant'})")
+            page.wait_for_timeout(100)
+            assert flow.evaluate('(e)=>getComputedStyle(e).animationPlayState') == 'paused'
+            record('Manual pause survives leaving and returning to the viewport')
+            page.emulate_media(reduced_motion='no-preference')
+            page.wait_for_function("!document.querySelector('.hero-visual').classList.contains('motion-paused')")
+            record('Changing the system motion preference updates playback')
+
+            for width in (1440, 1100, 820, 760, 390, 320):
+                page.set_viewport_size({'width':width, 'height':1000})
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), width
+                sizes = page.evaluate('''() => Object.fromEntries(
+                  ['.paper-card h3','.paper-summary','#search','.filters select','.text-button',
+                   '.category-button','.paper-meta'].map(s => [s,parseFloat(getComputedStyle(document.querySelector(s)).fontSize)]))''')
+                assert sizes['.paper-card h3'] >= 20, sizes
+                assert sizes['.paper-meta'] >= 13, sizes
+                assert all(value >= 16 for key, value in sizes.items() if key != '.paper-meta'), sizes
+            record('Larger reading and control text without overflow at six viewport widths')
 
             mobile = browser.new_context(viewport={'width':390, 'height':844}, device_scale_factor=1,
                                          is_mobile=True, has_touch=True, reduced_motion='reduce')
             mp = mobile.new_page()
             observe(mp)
             mp.goto(origin, wait_until='networkidle')
+            assert mp.locator('#motion-toggle').is_enabled()
+            assert mp.locator('.vortex-flow').first.evaluate('(e)=>getComputedStyle(e).animationPlayState') == 'paused'
             assert mp.evaluate('document.documentElement.scrollWidth <= innerWidth')
             mp.screenshot(path=str(args.output/'mobile.png'), full_page=True)
             mp.screenshot(path=str(args.output/'mobile-viewport.png'))
@@ -219,11 +284,20 @@ def main() -> None:
             mp.locator('#papers [data-open]').first.click()
             assert mp.locator('#paper-dialog').is_visible()
             assert mp.evaluate('document.documentElement.scrollWidth <= innerWidth')
+            mp.screenshot(path=str(args.output/'mobile-dialog.png'))
             record('390 px mobile search and detail dialog without overflow')
             mp.keyboard.press('Escape')
             mp.set_viewport_size({'width':320, 'height':700})
             assert mp.evaluate('document.documentElement.scrollWidth <= innerWidth')
             record('320 px narrow viewport without overflow')
+            mp.locator('#motion-toggle').click()
+            mp.locator('.storm-frame').scroll_into_view_if_needed()
+            mf = mp.locator('.vortex-flow').first
+            offset = mf.evaluate('(e)=>getComputedStyle(e).strokeDashoffset')
+            mp.wait_for_timeout(350)
+            assert mf.evaluate('(e)=>getComputedStyle(e).strokeDashoffset') != offset
+            mp.locator('.hero-visual').screenshot(path=str(args.output/'mobile-tornado.png'))
+            record('Mobile reduced-motion visitor can explicitly play the tornado')
 
             blocked = browser.new_context(reduced_motion='reduce')
             bp = blocked.new_page()

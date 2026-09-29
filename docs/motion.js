@@ -5,19 +5,26 @@
   const toggle = document.getElementById('motion-toggle');
   if (!visual || !toggle) return;
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let userPaused = false;
+  // null follows the system; an explicit Play is allowed even in reduced-motion mode.
+  let userPaused = null;
   let visible = true;
 
   function update() {
-    const paused = userPaused || reduced.matches || document.hidden || !visible;
+    const requestedPause = userPaused ?? reduced.matches;
+    const paused = requestedPause || document.hidden || !visible;
+    // One inherited state controls both the inline SVG and the radar sweep.
+    visual.style.setProperty('--motion-state', paused ? 'paused' : 'running');
     visual.classList.toggle('motion-paused', paused);
-    toggle.disabled = reduced.matches;
-    toggle.setAttribute('aria-pressed', String(userPaused || reduced.matches));
-    toggle.textContent = reduced.matches ? 'Motion reduced' : userPaused ? 'Play animation' : 'Pause animation';
+    toggle.setAttribute('aria-pressed', String(requestedPause));
+    toggle.textContent = requestedPause ? '▶ Play tornado' : 'Ⅱ Pause tornado';
   }
   toggle.hidden = false;
-  toggle.addEventListener('click', () => { userPaused = !userPaused; update(); });
-  reduced.addEventListener('change', update);
+  toggle.addEventListener('click', () => {
+    userPaused = !(userPaused ?? reduced.matches);
+    update();
+  });
+  // A new system preference takes effect immediately; Play can override it again.
+  reduced.addEventListener('change', () => { userPaused = null; update(); });
   document.addEventListener('visibilitychange', update);
   if ('IntersectionObserver' in window) {
     new IntersectionObserver(entries => {
